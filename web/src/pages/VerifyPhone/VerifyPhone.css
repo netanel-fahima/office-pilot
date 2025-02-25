@@ -1,0 +1,51 @@
+.verify-phone-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(50deg, #fff6f0 0%, #fbe8e9 57%, #fcfcff 100%);
+}
+
+.verify-phone-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.verify-phone-title {
+  text-align: center;
+  color: #1890ff;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.verify-phone-subtitle {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+.verify-button {
+  height: 40px;
+  font-size: 16px;
+}
+
+.verification-code-input {
+  letter-spacing: 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.resend-button {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.timer {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  color: #666;
+}

@@ -6,6 +6,7 @@ import AppHeader from "./components/layout/Header/Header";
 import ClientLayout from "./components/layout/ClientLayout/ClientLayout";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
+import VerifyPhone from "./pages/VerifyPhone/VerifyPhone";
 import AuthGuard from "./components/AuthGuard/AuthGuard";
 
 const { Content } = Layout;
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/verify-phone" element={<VerifyPhone />} />
         <Route
           path="/*"
           element={
