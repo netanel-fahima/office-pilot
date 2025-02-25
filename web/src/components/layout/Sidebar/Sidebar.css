@@ -1,0 +1,44 @@
+.sidebar-container {
+  height: 100vh;
+  transition: width 0.3s ease-in-out;
+  background: linear-gradient(50deg, #fff6f0 0%, #fbe8e9 57%, #fcfcff 100%);
+  color: white;
+  direction: rtl; /* תומך ב-RTL */
+}
+
+.sidebar-container.collapsed {
+  width: 80px;
+}
+
+.sidebar-container .ant-menu {
+  background: transparent;
+}
+
+.sidebar-container .ant-menu-item {
+  font-size: 16px;
+  transition: all 0.3s;
+  text-align: right; /* כדי שהאייקון יישאר מימין לטקסט */
+  margin-top: 13px;
+  color: #6f6c99;
+}
+
+.sidebar-container .ant-menu-light .ant-menu-item-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.sidebar-container.collapsed .ant-menu-item {
+  text-align: center;
+}
+
+.toggle-button {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.toggle-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,36 @@
+{
+  "appName": "Office Pilot",
+  "searchPlaceholder": "חיפוש...",
+  "notifications": "התראות",
+  "download": "הורדות",
+  "profile": "פרופיל",
+  "logout": "התנתקות",
+  "headerItems": {
+    "search": "חיפוש...",
+    "profile": "פרופיל",
+    "logout": "התנתקות",
+    "download": "הורדה"
+  },
+  "menus": {
+    "events": "אירועים",
+    "leads": "לידים",
+    "reports": "דוחות",
+    "meetings": "פגישות",
+    "summaries": "סיכומי פגישות",
+    "documents": "מסמכים",
+    "activities": "פעילויות",
+    "processes": "תהליכים",
+    "products": "מוצרים"
+  },
+  "client-menu": {
+    "products": "מוצרים",
+    "processes": "תהליכים",
+    "activities": "פעילויות",
+    "screens": "מסכים",
+    "meetings": "פגישות",
+    "meeting_summaries": "סיכומי פגישות",
+    "reports": "דוחות",
+    "children": "לידים",
+    "events": "אירועים"
+  }
+}

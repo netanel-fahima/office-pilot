@@ -1,0 +1,36 @@
+{
+  "appName": "Management System",
+  "searchPlaceholder": "Search...",
+  "notifications": "Notifications",
+  "download": "Downloads",
+  "profile": "Profile",
+  "logout": "Logout",
+  "headerItems": {
+    "search": "Search...",
+    "profile": "Profile",
+    "logout": "Logout",
+    "download": "Download"
+  },
+  "menus": {
+    "events": "Events",
+    "leads": "Leads",
+    "reports": "Reports",
+    "meetings": "Meetings",
+    "summaries": "Summaries",
+    "documents": "Documents",
+    "activities": "Activities",
+    "processes": "Processes",
+    "products": "Products"
+  },
+  "client-menu": {
+    "products": "Products",
+    "processes": "Processes",
+    "activities": "Activities",
+    "screens": "Screens",
+    "meetings": "Meetings",
+    "meeting_summaries": "Meeting Summaries",
+    "reports": "Reports",
+    "children": "Lids",
+    "events": "Events"
+  }
+}
