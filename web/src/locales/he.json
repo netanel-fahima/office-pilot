@@ -86,6 +86,20 @@
       "confirmations": {
         "delete_title": "האם אתה בטוח שברצונך למחוק משתמש זה?",
         "delete_content": "פעולה זו אינה הפיכה"
+      },
+      "validation": {
+        "required_first_name": "נא להזין שם פרטי",
+        "required_last_name": "נא להזין שם משפחה",
+        "required_email": "נא להזין אימייל",
+        "invalid_email": "אימייל לא תקין",
+        "required_phone": "נא להזין מספר טלפון",
+        "invalid_phone": "מספר טלפון לא תקין",
+        "required_invite": "נא להזין קוד הזמנה",
+        "invalid_invite": "קוד הזמנה לא תקין",
+        "required_password": "נא להזין סיסמה",
+        "password_length": "הסיסמה חייבת להכיל לפחות 6 תווים",
+        "required_username": "נא להזין שם משתמש",
+        "required_role": "נא לבחור תפקיד"
       }
     }
   },
