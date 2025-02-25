@@ -1,5 +1,5 @@
 {
-  "appName": "Management System",
+  "appName": "Office Pilot",
   "searchPlaceholder": "Search...",
   "notifications": "Notifications",
   "download": "Downloads",
@@ -16,7 +16,7 @@
     "leads": "Leads",
     "reports": "Reports",
     "meetings": "Meetings",
-    "summaries": "Summaries",
+    "summaries": "Meeting Summaries",
     "documents": "Documents",
     "activities": "Activities",
     "processes": "Processes",
@@ -32,7 +32,102 @@
     "meetings": "Meetings",
     "meeting_summaries": "Meeting Summaries",
     "reports": "Reports",
-    "children": "Lids",
+    "children": "Leads",
     "events": "Events"
+  },
+  "admin": {
+    "users": {
+      "title": "Users Management",
+      "create_user": "Create New User",
+      "user_list": "Users List",
+      "fields": {
+        "username": "Username",
+        "email": "Email",
+        "role": "Role",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "placeholders": {
+        "username": "Enter username",
+        "email": "Enter email",
+        "role": "Select role"
+      },
+      "roles": {
+        "secretary": "Secretary",
+        "sales": "Sales",
+        "agent": "Agent",
+        "assistant": "Assistant"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "buttons": {
+        "create": "Create User",
+        "delete": "Delete",
+        "reset_password": "Reset Password",
+        "confirm_yes": "Yes",
+        "confirm_no": "No"
+      },
+      "messages": {
+        "create_success": "User created successfully!",
+        "delete_success": "User deleted successfully",
+        "reset_password_success": "Password reset email sent",
+        "toggle_active_success": "User status updated successfully",
+        "error_loading": "Error loading users",
+        "error_creating": "Error creating user",
+        "error_deleting": "Error deleting user",
+        "error_reset_password": "Error sending password reset email",
+        "error_toggle_active": "Error updating user status"
+      },
+      "confirmations": {
+        "delete_title": "Are you sure you want to delete this user?",
+        "delete_content": "This action cannot be undone"
+      }
+    }
+  },
+  "auth": {
+    "signup": {
+      "title": "Sign up for Office Pilot",
+      "fields": {
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "invite_code": "Invite Code",
+        "password": "Password"
+      },
+      "placeholders": {
+        "first_name": "Enter first name",
+        "last_name": "Enter last name",
+        "email": "Enter email",
+        "phone": "Enter phone number",
+        "invite_code": "Enter invite code",
+        "password": "Enter password"
+      },
+      "buttons": {
+        "signup": "Sign Up",
+        "login": "Login here"
+      },
+      "messages": {
+        "success": "Registration successful! Please verify your phone number",
+        "error_email_exists": "Email already exists",
+        "error_invalid_code": "Invalid invite code",
+        "error_code_not_found": "Invite code not found or already used",
+        "error_general": "Error during registration"
+      },
+      "validation": {
+        "required_first_name": "Please enter first name",
+        "required_last_name": "Please enter last name",
+        "required_email": "Please enter email",
+        "invalid_email": "Invalid email",
+        "required_phone": "Please enter phone number",
+        "invalid_phone": "Invalid phone number",
+        "required_invite": "Please enter invite code",
+        "invalid_invite": "Invalid invite code",
+        "required_password": "Please enter password",
+        "password_length": "Password must be at least 6 characters"
+      }
+    }
   }
 }

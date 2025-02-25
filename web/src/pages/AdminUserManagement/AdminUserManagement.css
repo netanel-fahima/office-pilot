@@ -6,11 +6,28 @@
 
 .admin-user-card {
   max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+.admin-user-list-card {
   margin: 0 auto;
 }
 
-.admin-user-card h1 {
+.admin-user-card h1,
+.admin-user-list-card h2 {
   text-align: center;
   margin-bottom: 24px;
   color: #1890ff;
+}
+
+.ant-table {
+  direction: rtl;
+}
+
+.ant-table-thead > tr > th {
+  text-align: right;
+}
+
+.ant-table-tbody > tr > td {
+  text-align: right;
 }

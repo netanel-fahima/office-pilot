@@ -34,5 +34,100 @@
     "reports": "דוחות",
     "children": "לידים",
     "events": "אירועים"
+  },
+  "admin": {
+    "users": {
+      "title": "ניהול משתמשים",
+      "create_user": "יצירת משתמש חדש",
+      "user_list": "רשימת משתמשים",
+      "fields": {
+        "username": "שם משתמש",
+        "email": "אימייל",
+        "role": "תפקיד",
+        "status": "סטטוס",
+        "actions": "פעולות"
+      },
+      "placeholders": {
+        "username": "הזן שם משתמש",
+        "email": "הזן אימייל",
+        "role": "בחר תפקיד"
+      },
+      "roles": {
+        "secretary": "מזכיר/ה",
+        "sales": "איש מכירות",
+        "agent": "סוכן",
+        "assistant": "עוזר/ת"
+      },
+      "status": {
+        "active": "פעיל",
+        "inactive": "לא פעיל"
+      },
+      "buttons": {
+        "create": "צור משתמש",
+        "delete": "מחק",
+        "reset_password": "אפס סיסמה",
+        "confirm_yes": "כן",
+        "confirm_no": "לא"
+      },
+      "messages": {
+        "create_success": "המשתמש נוצר בהצלחה!",
+        "delete_success": "המשתמש נמחק בהצלחה",
+        "reset_password_success": "נשלח מייל לאיפוס סיסמה",
+        "toggle_active_success": "סטטוס המשתמש עודכן בהצלחה",
+        "error_loading": "שגיאה בטעינת המשתמשים",
+        "error_creating": "שגיאה ביצירת המשתמש",
+        "error_deleting": "שגיאה במחיקת המשתמש",
+        "error_reset_password": "שגיאה בשליחת מייל לאיפוס סיסמה",
+        "error_toggle_active": "שגיאה בעדכון סטטוס המשתמש"
+      },
+      "confirmations": {
+        "delete_title": "האם אתה בטוח שברצונך למחוק משתמש זה?",
+        "delete_content": "פעולה זו אינה הפיכה"
+      }
+    }
+  },
+  "auth": {
+    "signup": {
+      "title": "הרשמה ל-Office Pilot",
+      "fields": {
+        "first_name": "שם פרטי",
+        "last_name": "שם משפחה",
+        "email": "אימייל",
+        "phone": "מספר טלפון",
+        "invite_code": "קוד הזמנה",
+        "password": "סיסמה"
+      },
+      "placeholders": {
+        "first_name": "הזן שם פרטי",
+        "last_name": "הזן שם משפחה",
+        "email": "הזן אימייל",
+        "phone": "הזן מספר טלפון",
+        "invite_code": "הזן קוד הזמנה",
+        "password": "הזן סיסמה"
+      },
+      "buttons": {
+        "signup": "הרשמה",
+        "login": "התחבר כאן"
+      },
+      "messages": {
+        "success": "נרשמת בהצלחה! נא לאמת את מספר הטלפון",
+        "error_email_exists": "כתובת האימייל כבר קיימת במערכת",
+        "error_invalid_code": "קוד הזמנה לא תקין",
+        "error_code_not_found": "קוד ההזמנה לא נמצא או כבר נוצל",
+        "error_general": "אירעה שגיאה בתהליך ההרשמה"
+      },
+      "validation": {
+        "required_first_name": "נא להזין שם פרטי",
+        "required_last_name": "נא להזין שם משפחה",
+        "required_email": "נא להזין אימייל",
+        "invalid_email": "אימייל לא תקין",
+        "required_phone": "נא להזין מספר טלפון",
+        "invalid_phone": "מספר טלפון לא תקין",
+        "required_invite": "נא להזין קוד הזמנה",
+        "invalid_invite": "קוד הזמנה לא תקין",
+        "required_password": "נא להזין סיסמה",
+        "password_length": "הסיסמה חייבת להכיל לפחות 6 תווים"
+      }
+    }
   }
 }
