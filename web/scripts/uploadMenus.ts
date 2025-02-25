@@ -1,7 +1,6 @@
-import { addDoc, collection, doc, setDoc } from "firebase/firestore";
+import { addDoc, collection, getDocs, deleteDoc } from "firebase/firestore";
 import { db } from "../src/config/firebaseConfig";
 
-// רשימת התפריטים להעלאה
 const menus = [
   {
     name: "events",
@@ -59,20 +58,41 @@ const menus = [
     path: "/processes",
     order: 8,
   },
+  {
+    name: "admin",
+    title: "admin",
+    icon: "ToolOutlined",
+    path: "/admin",
+    order: 9,
+    children: [
+      {
+        name: "users",
+        title: "users_management",
+        icon: "UserSwitchOutlined",
+        path: "/admin/users",
+        order: 1,
+      },
+    ],
+  },
 ];
 
-// פונקציה להעלאת התפריטים ל-Firestore
 const uploadMenus = async () => {
   try {
+    // מחיקת כל התפריטים הקיימים
+    const snapshot = await getDocs(collection(db, "menus"));
+    const deletePromises = snapshot.docs.map((doc) => deleteDoc(doc.ref));
+    await Promise.all(deletePromises);
+    console.log("🗑️ כל התפריטים הקיימים נמחקו");
+
+    // הוספת התפריטים החדשים
     for (const menu of menus) {
       await addDoc(collection(db, "menus"), menu);
       console.log(`✅ נוסף: ${menu.title}`);
     }
-    console.log("🎉 כל התפריטים הועלו בהצלחה!");
+    console.log("🎉 כל התפריטים החדשים הועלו בהצלחה!");
   } catch (error) {
     console.error("❌ שגיאה בהעלאה:", error);
   }
 };
 
-// הרצת הפונקציה
 uploadMenus();

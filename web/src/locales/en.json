@@ -20,7 +20,9 @@
     "documents": "Documents",
     "activities": "Activities",
     "processes": "Processes",
-    "products": "Products"
+    "products": "Products",
+    "admin": "Admin",
+    "users_management": "Users Management"
   },
   "client-menu": {
     "products": "Products",

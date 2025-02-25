@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Image, Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
-import * as Icons from "@ant-design/icons"; // יבוא כל האייקונים
+import * as Icons from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
 import "./Sidebar.css";
 import { useLayoutStore } from "@src/store/layoutStore";
@@ -18,6 +18,30 @@ const Sidebar = () => {
     actions.populateSideBar();
   }, [actions]);
 
+  const renderMenuItems = (items: any[]) => {
+    return items.map((item) => {
+      const IconComponent = (Icons as any)[item.icon] || Icons.AppstoreOutlined;
+
+      if (item.children) {
+        return (
+          <Menu.SubMenu
+            key={item.path}
+            icon={<IconComponent />}
+            title={t(`menus.${item.title}`)}
+          >
+            {renderMenuItems(item.children)}
+          </Menu.SubMenu>
+        );
+      }
+
+      return (
+        <Menu.Item key={item.path} icon={<IconComponent />}>
+          <Link to={item.path}>{!collapsed && t(`menus.${item.title}`)}</Link>
+        </Menu.Item>
+      );
+    });
+  };
+
   return (
     <Sider
       collapsed={collapsed}
@@ -33,14 +57,7 @@ const Sidebar = () => {
         )}
       </div>
       <Menu mode="inline" theme="light" className="rtl-menu">
-        {menuItems.map(({ id, title, icon, path }) => {
-          const IconComponent = (Icons as any)[icon] || Icons.AppstoreOutlined;
-          return (
-            <Menu.Item key={id} icon={<IconComponent />}>
-              <Link to={path}>{!collapsed && t(`menus.${title}`)}</Link>
-            </Menu.Item>
-          );
-        })}
+        {renderMenuItems(menuItems)}
       </Menu>
     </Sider>
   );

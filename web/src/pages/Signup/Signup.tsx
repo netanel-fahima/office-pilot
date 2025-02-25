@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Form, Input, Button, Card, message, Select } from "antd";
 import {
   UserOutlined,
@@ -12,9 +12,17 @@ import {
   updateProfile,
   signOut,
 } from "firebase/auth";
-import { doc, setDoc } from "firebase/firestore";
-import { useNavigate, Link } from "react-router-dom";
+import {
+  doc,
+  setDoc,
+  collection,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
+import { useNavigate, Link, useSearchParams } from "react-router-dom";
 import { db } from "@src/config/firebaseConfig";
+import { validateInviteCode } from "@src/utils/userUtils";
 import "./Signup.css";
 
 const { Option } = Select;
@@ -25,7 +33,7 @@ interface SignupFormData {
   email: string;
   password: string;
   phoneNumber: string;
-  role: string;
+  inviteCode: string;
 }
 
 const Signup = () => {
@@ -33,10 +41,41 @@ const Signup = () => {
   const navigate = useNavigate();
   const auth = getAuth();
   const [form] = Form.useForm();
+  const [searchParams] = useSearchParams();
+  const inviteCode = searchParams.get("invite");
+
+  useEffect(() => {
+    if (inviteCode) {
+      form.setFieldsValue({ inviteCode });
+    }
+  }, [inviteCode, form]);
+
+  const validateInvite = async (code: string) => {
+    const invitesRef = collection(db, "userInvites");
+    const q = query(
+      invitesRef,
+      where("managerSentCode", "==", code),
+      where("claimed", "==", false)
+    );
+    const snapshot = await getDocs(q);
+    return !snapshot.empty ? snapshot.docs[0] : null;
+  };
 
   const onFinish = async (values: SignupFormData) => {
     setLoading(true);
     try {
+      // בדיקת קוד ההזמנה
+      if (!validateInviteCode(values.inviteCode)) {
+        throw new Error("קוד הזמנה לא תקין");
+      }
+
+      const invite = await validateInvite(values.inviteCode);
+      if (!invite) {
+        throw new Error("קוד ההזמנה לא נמצא או כבר נוצל");
+      }
+
+      const inviteData = invite.data();
+
       // יצירת משתמש ב-Firebase Auth
       const { user } = await createUserWithEmailAndPassword(
         auth,
@@ -53,15 +92,14 @@ const Signup = () => {
       const userDoc = doc(db, "users", user.uid);
       await setDoc(userDoc, {
         id: user.uid,
+        username: inviteData.username,
+        managerSentCode: values.inviteCode,
         firstName: values.firstName,
         lastName: values.lastName,
         fullName: `${values.firstName} ${values.lastName}`,
         email: values.email,
         phoneNumber: values.phoneNumber,
-        role: {
-          name: values.role,
-          description: `${values.role} role`,
-        },
+        role: inviteData.role,
         permissions: [],
         accessList: [],
         createdDate: new Date(),
@@ -70,11 +108,18 @@ const Signup = () => {
         phoneVerified: false,
       });
 
-      // התנתקות מיידית כדי למנוע כניסה אוטומטית למערכת
+      // סימון ההזמנה כנוצלה
+      await setDoc(doc(db, "userInvites", invite.id), {
+        ...inviteData,
+        claimed: true,
+        claimedBy: user.uid,
+        claimedDate: new Date(),
+      });
+
+      // התנתקות מיידית
       await signOut(auth);
 
       message.success("נרשמת בהצלחה! נא לאמת את מספר הטלפון");
-      // העברה לדף אימות SMS עם מספר הטלפון
       navigate("/verify-phone", {
         state: {
           phoneNumber: values.phoneNumber,
@@ -87,7 +132,7 @@ const Signup = () => {
       if (error.code === "auth/email-already-in-use") {
         message.error("כתובת האימייל כבר קיימת במערכת");
       } else {
-        message.error("אירעה שגיאה בתהליך ההרשמה");
+        message.error(error.message || "אירעה שגיאה בתהליך ההרשמה");
         console.error("Error during signup:", error);
       }
     } finally {
@@ -153,21 +198,19 @@ const Signup = () => {
           </Form.Item>
 
           <Form.Item
-            name="role"
-            rules={[{ required: true, message: "נא לבחור תפקיד" }]}
+            name="inviteCode"
+            rules={[
+              { required: true, message: "נא להזין קוד הזמנה" },
+              {
+                validator: async (_, value) => {
+                  if (!validateInviteCode(value)) {
+                    throw new Error("קוד הזמנה לא תקין");
+                  }
+                },
+              },
+            ]}
           >
-            <Select
-              placeholder="בחר תפקיד"
-              size="large"
-              className="role-select"
-            >
-              <Option value="admin">מנהל מערכת</Option>
-              <Option value="secretary">מזכיר/ה</Option>
-              <Option value="sales">איש מכירות</Option>
-              <Option value="agent">סוכן</Option>
-              <Option value="assistant">עוזר/ת</Option>
-              <Option value="other">אחר</Option>
-            </Select>
+            <Input placeholder="קוד הזמנה" size="large" />
           </Form.Item>
 
           <Form.Item

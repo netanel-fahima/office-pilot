@@ -20,7 +20,9 @@
     "documents": "מסמכים",
     "activities": "פעילויות",
     "processes": "תהליכים",
-    "products": "מוצרים"
+    "products": "מוצרים",
+    "admin": "ניהול",
+    "users_management": "ניהול משתמשים"
   },
   "client-menu": {
     "products": "מוצרים",

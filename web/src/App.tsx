@@ -7,6 +7,7 @@ import ClientLayout from "./components/layout/ClientLayout/ClientLayout";
 import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import VerifyPhone from "./pages/VerifyPhone/VerifyPhone";
+import AdminUserManagement from "./pages/AdminUserManagement/AdminUserManagement";
 import AuthGuard from "./components/AuthGuard/AuthGuard";
 
 const { Content } = Layout;
@@ -30,6 +31,10 @@ export default function App() {
                     <Routes>
                       <Route path="/" element={<Dashboard />} />
                       <Route path="events" element={<Dashboard />} />
+                      <Route
+                        path="admin/users"
+                        element={<AdminUserManagement />}
+                      />
                       <Route path="*" element={<h1>🔍 דף לא נמצא</h1>} />
                       <Route path="client/*" element={<ClientLayout />}>
                         <Route path="events" element={<Dashboard />} />
