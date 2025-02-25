@@ -101,7 +101,7 @@ const VerifyPhone = () => {
       <Card className="verify-phone-card">
         <h1 className="verify-phone-title">{t("auth.verify_phone.title")}</h1>
         <p className="verify-phone-subtitle">
-          {t("auth.verify_phone.subtitle", { phoneNumber })}
+          {t("auth.verify_phone.subtitle", { phoneNumber: phoneNumber })}
         </p>
 
         <Form name="verifyPhone" onFinish={onFinish} layout="vertical">

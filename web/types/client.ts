@@ -1,4 +1,4 @@
-interface InsuranceClient {
+export interface InsuranceClient {
   id: string; // מזהה ייחודי של הלקוח
   tenantId: string; // מזהה השוכר
   agencyId: string; // מזהה הסוכנות
@@ -13,7 +13,7 @@ interface InsuranceClient {
   lastModifiedBy: string; // מזהה המעדכן האחרון
   version: number; // מספר גרסה
   sensitive: boolean; // האם המידע רגיש?
-  
+
   personalDetails: PersonalDetails; // פרטים אישיים
   contactDetails: ContactDetails; // פרטי התקשרות
   address: Address; // כתובת מלאה
@@ -29,18 +29,18 @@ interface InsuranceClient {
   tags: string[]; // תגיות
 }
 
-interface ClientStatus {
+export interface ClientStatus {
   id: string;
   name: string;
   isActive: boolean;
 }
 
-interface ClientSource {
+export interface ClientSource {
   id: string;
   name: string;
 }
 
-interface PersonalDetails {
+export interface PersonalDetails {
   firstName: string;
   lastName: string;
   fullName: string;
@@ -59,14 +59,14 @@ interface PersonalDetails {
   idCardIssueDate: Date;
 }
 
-interface IdType {
+export interface IdType {
   code: number;
   description: string;
   shortDescription: string;
   obsolete: boolean;
 }
 
-interface ContactDetails {
+export interface ContactDetails {
   phoneNumber: string;
   phoneNumberFormatted: string;
   phoneNumberUri: string;
@@ -77,7 +77,7 @@ interface ContactDetails {
   emailComplaint: boolean;
 }
 
-interface Address {
+export interface Address {
   street: string;
   streetNumber: string;
   city: string;
@@ -85,14 +85,14 @@ interface Address {
   fullAddress: string;
 }
 
-interface MaritalStatus {
+export interface MaritalStatus {
   code: number;
   description: string;
   shortDescription: string;
   obsolete: boolean;
 }
 
-interface MailingStatus {
+export interface MailingStatus {
   code: number;
   description: string;
   shortDescription: string;
@@ -100,14 +100,14 @@ interface MailingStatus {
   obsolete: boolean;
 }
 
-interface Employment {
+export interface Employment {
   employer: string;
   position: string;
   startDate: Date;
   endDate?: Date;
 }
 
-interface FinancialStats {
+export interface FinancialStats {
   totalSavings: number;
   pensionFund: number;
   compensationFund: number;
@@ -122,7 +122,7 @@ interface FinancialStats {
   estimatedMonthlyPensionWithoutDeposits: number;
 }
 
-interface InsurancePolicy {
+export interface InsurancePolicy {
   policyId: string;
   type: "health" | "life" | "auto" | "home" | "travel" | "business";
   provider: string;
@@ -133,7 +133,7 @@ interface InsurancePolicy {
   status: "active" | "expired" | "pending" | "canceled";
 }
 
-interface ClaimRecord {
+export interface ClaimRecord {
   claimId: string;
   policyId: string;
   dateFiled: Date;
@@ -142,7 +142,7 @@ interface ClaimRecord {
   reason?: string;
 }
 
-interface PaymentDetails {
+export interface PaymentDetails {
   paymentMethod: "credit_card" | "bank_transfer" | "paypal";
   cardNumber?: string;
   bankAccountNumber?: string;

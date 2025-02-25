@@ -148,7 +148,7 @@
     },
     "verify_phone": {
       "title": "אימות מספר טלפון",
-      "subtitle": "קוד אימות נשלח למספר {phoneNumber}",
+      "subtitle": "קוד אימות נשלח למספר {{phoneNumber}}",
       "placeholders": {
         "code": "000000"
       },
@@ -166,7 +166,7 @@
         "verify": "אמת קוד",
         "resend": "שלח קוד חדש"
       },
-      "timer": "{seconds} שניות"
+      "timer": "{{seconds}} שניות"
     },
     "login": {
       "title": "התחברות ל-Office Pilot",

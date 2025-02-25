@@ -1,4 +1,4 @@
-interface Employer {
+export interface Employer {
   id: string; // מזהה ייחודי של המעסיק
   tenantId: string; // מזהה השוכר
   agencyId: string; // מזהה הסוכנות
@@ -34,14 +34,14 @@ interface Employer {
   customFields: Record<string, any>; // שדות מותאמים אישית
 }
 
-interface IdType {
+export interface IdType {
   code: number;
   description: string;
   shortDescription: string;
   obsolete: boolean;
 }
 
-interface Address {
+export interface Address {
   street?: string;
   streetNumber?: string;
   city?: string;
@@ -49,20 +49,20 @@ interface Address {
   country?: string;
 }
 
-interface ContactPerson {
+export interface ContactPerson {
   name: string;
   phoneNumber: string;
   email: string;
   position?: string; // תפקיד (לדוגמה: מנהל משאבי אנוש)
 }
 
-interface EmployerStatus {
+export interface EmployerStatus {
   id: string;
   name: string;
   isActive: boolean;
 }
 
-interface EmployerAgreement {
+export interface EmployerAgreement {
   agreementId: string;
   provider: string; // שם חברת הביטוח או קרן הפנסיה
   startDate: Date;

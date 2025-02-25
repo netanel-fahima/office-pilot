@@ -1,4 +1,4 @@
-interface SystemUser {
+export interface SystemUser {
   id: string; // מזהה ייחודי של המשתמש
   tenantId: string; // מזהה השוכר (Tenant)
   agencyId: string; // מזהה הסוכנות
@@ -19,13 +19,13 @@ interface SystemUser {
   isActive: boolean; // האם המשתמש פעיל?
 }
 
-interface UserRole {
+export interface UserRole {
   id: string;
   name: "admin" | "secretary" | "sales" | "agent" | "assistant" | "other"; // סוג התפקיד
   description?: string; // תיאור התפקיד
 }
 
-interface UserPermissions {
+export interface UserPermissions {
   module: string; // שם המודול שהמשתמש מורשה אליו (לקוחות, פוליסות, תביעות וכו')
   canView: boolean; // האם יכול לצפות בנתונים?
   canEdit: boolean; // האם יכול לערוך נתונים?
@@ -33,7 +33,7 @@ interface UserPermissions {
   canManage?: boolean; // האם יכול לנהל משתמשים אחרים?
 }
 
-interface UserAccess {
+export interface UserAccess {
   id: string; // מזהה הגישה
   userId: string; // מזהה המשתמש המשויך
   groupId: string; // קבוצה של גישה (לדוגמה: "customer-products")

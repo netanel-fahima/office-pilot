@@ -29,7 +29,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { db } from "@src/config/firebaseConfig";
 import { generateInviteCode, generateInviteLink } from "@src/utils/userUtils";
-import type { SystemUser } from "@src/types/user";
+import type { SystemUser } from "@root/types/user";
 import "./AdminUserManagement.css";
 
 const { Option } = Select;
@@ -52,7 +52,7 @@ const AdminUserManagement = () => {
       const usersData = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
         key: doc.id,
-      })) as SystemUser[];
+      })) as unknown as SystemUser[];
       setUsers(usersData);
     } catch (error) {
       console.error("Error fetching users:", error);
