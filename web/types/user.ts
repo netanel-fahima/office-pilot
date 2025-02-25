@@ -9,7 +9,7 @@ interface SystemUser {
   phoneNumber?: string; // מספר טלפון
   role: UserRole; // תפקיד במערכת
   permissions: UserPermissions[]; // הרשאות למשתמש
-  accessList: UserAccess[]; // **רשימת גישות לממשקים**
+  accessList: UserAccess[]; // **רשימת גישות לממשקים* *
 
   createdDate: Date; // תאריך יצירה
   createdBy?: string; // מזהה היוצר
