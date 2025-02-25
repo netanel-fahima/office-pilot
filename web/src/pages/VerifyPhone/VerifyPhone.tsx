@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Form, Input, Button, Card, message } from "antd";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { useTranslation } from "react-i18next";
 import { doc, updateDoc } from "firebase/firestore";
 import { db } from "@src/config/firebaseConfig";
 import "./VerifyPhone.css";
@@ -18,6 +19,7 @@ const VerifyPhone = () => {
   const [timer, setTimer] = useState(60);
   const [canResend, setCanResend] = useState(false);
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const location = useLocation();
   const { phoneNumber, userId, email, password } =
     location.state as LocationState;
@@ -49,10 +51,10 @@ const VerifyPhone = () => {
       // כאן יש להוסיף את הלוגיקה לשליחת SMS
       // לדוגמה: שימוש בשירות SMS חיצוני או Firebase Phone Authentication
       console.log("Sending verification code to:", phoneNumber);
-      message.success("קוד אימות נשלח בהצלחה");
+      message.success(t("auth.verify_phone.messages.code_sent"));
     } catch (error) {
       console.error("Error sending verification code:", error);
-      message.error("שגיאה בשליחת קוד האימות");
+      message.error(t("auth.verify_phone.messages.error_invalid_code"));
     }
   };
 
@@ -71,11 +73,11 @@ const VerifyPhone = () => {
       // כניסה למערכת
       await signInWithEmailAndPassword(auth, email, password);
 
-      message.success("מספר הטלפון אומת בהצלחה!");
+      message.success(t("auth.verify_phone.messages.success"));
       navigate("/");
     } catch (error) {
       console.error("Error verifying code:", error);
-      message.error("קוד האימות שגוי");
+      message.error(t("auth.verify_phone.messages.error_invalid_code"));
     } finally {
       setLoading(false);
     }
@@ -97,25 +99,34 @@ const VerifyPhone = () => {
   return (
     <div className="verify-phone-container">
       <Card className="verify-phone-card">
-        <h1 className="verify-phone-title">אימות מספר טלפון</h1>
+        <h1 className="verify-phone-title">{t("auth.verify_phone.title")}</h1>
         <p className="verify-phone-subtitle">
-          קוד אימות נשלח למספר {phoneNumber}
+          {t("auth.verify_phone.subtitle", { phoneNumber })}
         </p>
 
         <Form name="verifyPhone" onFinish={onFinish} layout="vertical">
           <Form.Item
             name="code"
             rules={[
-              { required: true, message: "נא להזין את קוד האימות" },
-              { len: 6, message: "קוד האימות חייב להכיל 6 ספרות" },
-              { pattern: /^\d+$/, message: "יש להזין מספרים בלבד" },
+              {
+                required: true,
+                message: t("auth.verify_phone.validation.required_code"),
+              },
+              {
+                len: 6,
+                message: t("auth.verify_phone.validation.code_length"),
+              },
+              {
+                pattern: /^\d+$/,
+                message: t("auth.verify_phone.validation.numbers_only"),
+              },
             ]}
           >
             <Input
               className="verification-code-input"
               maxLength={6}
               size="large"
-              placeholder="000000"
+              placeholder={t("auth.verify_phone.placeholders.code")}
               type="tel"
               onChange={handleCodeChange}
             />
@@ -129,16 +140,20 @@ const VerifyPhone = () => {
               loading={loading}
               block
             >
-              אמת קוד
+              {t("auth.verify_phone.buttons.verify")}
             </Button>
           </Form.Item>
         </Form>
 
         <div className="resend-button">
           <Button type="link" onClick={handleResend} disabled={!canResend}>
-            שלח קוד חדש
+            {t("auth.verify_phone.buttons.resend")}
           </Button>
-          {!canResend && <span className="timer">{timer} שניות</span>}
+          {!canResend && (
+            <span className="timer">
+              {t("auth.verify_phone.timer", { seconds: timer })}
+            </span>
+          )}
         </div>
       </Card>
     </div>

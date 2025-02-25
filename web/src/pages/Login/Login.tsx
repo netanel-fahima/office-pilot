@@ -1,23 +1,25 @@
-import { useState } from 'react';
-import { Form, Input, Button, Card, message } from 'antd';
-import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { useNavigate, Link } from 'react-router-dom';
-import './Login.css';
+import { useState } from "react";
+import { Form, Input, Button, Card, message } from "antd";
+import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { useTranslation } from "react-i18next";
+import { useNavigate, Link } from "react-router-dom";
+import "./Login.css";
 
 const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const auth = getAuth();
+  const { t } = useTranslation();
 
   const onFinish = async (values: { email: string; password: string }) => {
     setLoading(true);
     try {
       await signInWithEmailAndPassword(auth, values.email, values.password);
-      message.success('התחברת בהצלחה!');
-      navigate('/');
+      message.success(t("auth.login.messages.success"));
+      navigate("/");
     } catch (error: any) {
-      message.error('שם משתמש או סיסמה שגויים');
+      message.error(t("auth.login.messages.error_invalid_credentials"));
     } finally {
       setLoading(false);
     }
@@ -26,7 +28,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <Card className="login-card">
-        <h1 className="login-title">Office Pilot</h1>
+        <h1 className="login-title">{t("appName")}</h1>
         <Form
           name="login"
           initialValues={{ remember: true }}
@@ -35,22 +37,32 @@ const Login = () => {
         >
           <Form.Item
             name="email"
-            rules={[{ required: true, message: 'נא להזין אימייל' }]}
+            rules={[
+              {
+                required: true,
+                message: t("auth.login.validation.required_email"),
+              },
+            ]}
           >
             <Input
               prefix={<UserOutlined />}
-              placeholder="אימייל"
+              placeholder={t("auth.login.placeholders.email")}
               size="large"
             />
           </Form.Item>
 
           <Form.Item
             name="password"
-            rules={[{ required: true, message: 'נא להזין סיסמה' }]}
+            rules={[
+              {
+                required: true,
+                message: t("auth.login.validation.required_password"),
+              },
+            ]}
           >
             <Input.Password
               prefix={<LockOutlined />}
-              placeholder="סיסמה"
+              placeholder={t("auth.login.placeholders.password")}
               size="large"
             />
           </Form.Item>
@@ -63,12 +75,13 @@ const Login = () => {
               loading={loading}
               block
             >
-              התחבר
+              {t("auth.login.buttons.login")}
             </Button>
           </Form.Item>
 
           <div className="signup-link">
-            אין לך חשבון? <Link to="/signup">הירשם כאן</Link>
+            {t("auth.login.signup_prompt")}{" "}
+            <Link to="/signup">{t("auth.login.buttons.signup")}</Link>
           </div>
         </Form>
       </Card>

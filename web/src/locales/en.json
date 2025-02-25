@@ -5,6 +5,7 @@
   "download": "Downloads",
   "profile": "Profile",
   "logout": "Logout",
+  "userName": "User",
   "headerItems": {
     "search": "Search...",
     "profile": "Profile",
@@ -45,7 +46,9 @@
         "email": "Email",
         "role": "Role",
         "status": "Status",
-        "actions": "Actions"
+        "actions": "Actions",
+        "invite_code": "Invite Code",
+        "invite_link": "Invite Link"
       },
       "placeholders": {
         "username": "Enter username",
@@ -128,6 +131,51 @@
         "required_password": "Please enter password",
         "password_length": "Password must be at least 6 characters"
       }
+    },
+    "verify_phone": {
+      "title": "Phone Verification",
+      "subtitle": "Verification code sent to {phoneNumber}",
+      "placeholders": {
+        "code": "000000"
+      },
+      "validation": {
+        "required_code": "Please enter verification code",
+        "code_length": "Verification code must be 6 digits",
+        "numbers_only": "Please enter numbers only"
+      },
+      "messages": {
+        "success": "Phone number verified successfully!",
+        "error_invalid_code": "Invalid verification code",
+        "code_sent": "Verification code sent successfully"
+      },
+      "buttons": {
+        "verify": "Verify Code",
+        "resend": "Send New Code"
+      },
+      "timer": "{seconds} seconds"
+    },
+    "login": {
+      "title": "Login to Office Pilot",
+      "placeholders": {
+        "email": "Enter email",
+        "password": "Enter password"
+      },
+      "validation": {
+        "required_email": "Please enter email",
+        "required_password": "Please enter password",
+        "required_username": "Please enter username",
+        "invalid_email": "Invalid email format",
+        "required_role": "Please select a role"
+      },
+      "messages": {
+        "success": "Login successful!",
+        "error_invalid_credentials": "Invalid email or password"
+      },
+      "buttons": {
+        "login": "Login",
+        "signup": "Sign up here"
+      },
+      "signup_prompt": "Don't have an account?"
     }
   }
 }

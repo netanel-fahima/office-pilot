@@ -20,6 +20,7 @@ import {
   where,
   getDocs,
 } from "firebase/firestore";
+import { useTranslation } from "react-i18next";
 import { useNavigate, Link, useSearchParams } from "react-router-dom";
 import { db } from "@src/config/firebaseConfig";
 import { validateInviteCode } from "@src/utils/userUtils";
@@ -42,6 +43,7 @@ const Signup = () => {
   const auth = getAuth();
   const [form] = Form.useForm();
   const [searchParams] = useSearchParams();
+  const { t } = useTranslation();
   const inviteCode = searchParams.get("invite");
 
   useEffect(() => {
@@ -66,12 +68,12 @@ const Signup = () => {
     try {
       // בדיקת קוד ההזמנה
       if (!validateInviteCode(values.inviteCode)) {
-        throw new Error("קוד הזמנה לא תקין");
+        throw new Error(t("auth.signup.validation.invalid_invite"));
       }
 
       const invite = await validateInvite(values.inviteCode);
       if (!invite) {
-        throw new Error("קוד ההזמנה לא נמצא או כבר נוצל");
+        throw new Error(t("auth.signup.messages.error_code_not_found"));
       }
 
       const inviteData = invite.data();
@@ -119,7 +121,7 @@ const Signup = () => {
       // התנתקות מיידית
       await signOut(auth);
 
-      message.success("נרשמת בהצלחה! נא לאמת את מספר הטלפון");
+      message.success(t("auth.signup.messages.success"));
       navigate("/verify-phone", {
         state: {
           phoneNumber: values.phoneNumber,
@@ -130,9 +132,9 @@ const Signup = () => {
       });
     } catch (error: any) {
       if (error.code === "auth/email-already-in-use") {
-        message.error("כתובת האימייל כבר קיימת במערכת");
+        message.error(t("auth.signup.messages.error_email_exists"));
       } else {
-        message.error(error.message || "אירעה שגיאה בתהליך ההרשמה");
+        message.error(error.message || t("auth.signup.messages.error_general"));
         console.error("Error during signup:", error);
       }
     } finally {
@@ -143,27 +145,37 @@ const Signup = () => {
   return (
     <div className="signup-container">
       <Card className="signup-card">
-        <h1 className="signup-title">הרשמה ל-Office Pilot</h1>
+        <h1 className="signup-title">{t("auth.signup.title")}</h1>
         <Form form={form} name="signup" onFinish={onFinish} layout="vertical">
           <div className="form-row">
             <Form.Item
               name="firstName"
-              rules={[{ required: true, message: "נא להזין שם פרטי" }]}
+              rules={[
+                {
+                  required: true,
+                  message: t("auth.signup.validation.required_first_name"),
+                },
+              ]}
             >
               <Input
                 prefix={<UserOutlined />}
-                placeholder="שם פרטי"
+                placeholder={t("auth.signup.placeholders.first_name")}
                 size="large"
               />
             </Form.Item>
 
             <Form.Item
               name="lastName"
-              rules={[{ required: true, message: "נא להזין שם משפחה" }]}
+              rules={[
+                {
+                  required: true,
+                  message: t("auth.signup.validation.required_last_name"),
+                },
+              ]}
             >
               <Input
                 prefix={<UserOutlined />}
-                placeholder="שם משפחה"
+                placeholder={t("auth.signup.placeholders.last_name")}
                 size="large"
               />
             </Form.Item>
@@ -172,13 +184,19 @@ const Signup = () => {
           <Form.Item
             name="email"
             rules={[
-              { required: true, message: "נא להזין אימייל" },
-              { type: "email", message: "אימייל לא תקין" },
+              {
+                required: true,
+                message: t("auth.signup.validation.required_email"),
+              },
+              {
+                type: "email",
+                message: t("auth.signup.validation.invalid_email"),
+              },
             ]}
           >
             <Input
               prefix={<MailOutlined />}
-              placeholder="אימייל"
+              placeholder={t("auth.signup.placeholders.email")}
               size="large"
             />
           </Form.Item>
@@ -186,13 +204,19 @@ const Signup = () => {
           <Form.Item
             name="phoneNumber"
             rules={[
-              { required: true, message: "נא להזין מספר טלפון" },
-              { pattern: /^[0-9]{10}$/, message: "מספר טלפון לא תקין" },
+              {
+                required: true,
+                message: t("auth.signup.validation.required_phone"),
+              },
+              {
+                pattern: /^[0-9]{10}$/,
+                message: t("auth.signup.validation.invalid_phone"),
+              },
             ]}
           >
             <Input
               prefix={<PhoneOutlined />}
-              placeholder="מספר טלפון"
+              placeholder={t("auth.signup.placeholders.phone")}
               size="large"
             />
           </Form.Item>
@@ -200,29 +224,38 @@ const Signup = () => {
           <Form.Item
             name="inviteCode"
             rules={[
-              { required: true, message: "נא להזין קוד הזמנה" },
+              {
+                required: true,
+                message: t("auth.signup.validation.required_invite"),
+              },
               {
                 validator: async (_, value) => {
                   if (!validateInviteCode(value)) {
-                    throw new Error("קוד הזמנה לא תקין");
+                    throw new Error(t("auth.signup.validation.invalid_invite"));
                   }
                 },
               },
             ]}
           >
-            <Input placeholder="קוד הזמנה" size="large" />
+            <Input
+              placeholder={t("auth.signup.placeholders.invite_code")}
+              size="large"
+            />
           </Form.Item>
 
           <Form.Item
             name="password"
             rules={[
-              { required: true, message: "נא להזין סיסמה" },
-              { min: 6, message: "הסיסמה חייבת להכיל לפחות 6 תווים" },
+              {
+                required: true,
+                message: t("auth.signup.validation.required_password"),
+              },
+              { min: 6, message: t("auth.signup.validation.password_length") },
             ]}
           >
             <Input.Password
               prefix={<LockOutlined />}
-              placeholder="סיסמה"
+              placeholder={t("auth.signup.placeholders.password")}
               size="large"
             />
           </Form.Item>
@@ -235,12 +268,13 @@ const Signup = () => {
               loading={loading}
               block
             >
-              הרשמה
+              {t("auth.signup.buttons.signup")}
             </Button>
           </Form.Item>
 
           <div className="login-link">
-            כבר יש לך חשבון? <Link to="/login">התחבר כאן</Link>
+            {t("auth.login.signup_prompt")}{" "}
+            <Link to="/login">{t("auth.signup.buttons.login")}</Link>
           </div>
         </Form>
       </Card>

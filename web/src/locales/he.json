@@ -5,6 +5,7 @@
   "download": "הורדות",
   "profile": "פרופיל",
   "logout": "התנתקות",
+  "userName": "משתמש",
   "headerItems": {
     "search": "חיפוש...",
     "profile": "פרופיל",
@@ -45,7 +46,9 @@
         "email": "אימייל",
         "role": "תפקיד",
         "status": "סטטוס",
-        "actions": "פעולות"
+        "actions": "פעולות",
+        "invite_code": "קוד הזמנה",
+        "invite_link": "קישור הזמנה"
       },
       "placeholders": {
         "username": "הזן שם משתמש",
@@ -128,6 +131,51 @@
         "required_password": "נא להזין סיסמה",
         "password_length": "הסיסמה חייבת להכיל לפחות 6 תווים"
       }
+    },
+    "verify_phone": {
+      "title": "אימות מספר טלפון",
+      "subtitle": "קוד אימות נשלח למספר {phoneNumber}",
+      "placeholders": {
+        "code": "000000"
+      },
+      "validation": {
+        "required_code": "נא להזין את קוד האימות",
+        "code_length": "קוד האימות חייב להכיל 6 ספרות",
+        "numbers_only": "יש להזין מספרים בלבד"
+      },
+      "messages": {
+        "success": "מספר הטלפון אומת בהצלחה!",
+        "error_invalid_code": "קוד האימות שגוי",
+        "code_sent": "קוד אימות נשלח בהצלחה"
+      },
+      "buttons": {
+        "verify": "אמת קוד",
+        "resend": "שלח קוד חדש"
+      },
+      "timer": "{seconds} שניות"
+    },
+    "login": {
+      "title": "התחברות ל-Office Pilot",
+      "placeholders": {
+        "email": "הזן אימייל",
+        "password": "הזן סיסמה"
+      },
+      "validation": {
+        "required_username": "נא להזין שם משתמש",
+        "required_email": "נא להזין אימייל",
+        "invalid_email": "פורמט אימייל לא תקין",
+        "required_role": "נא לבחור תפקיד",
+        "required_password": "נא להזין סיסמה"
+      },
+      "messages": {
+        "success": "התחברת בהצלחה!",
+        "error_invalid_credentials": "שם משתמש או סיסמה שגויים"
+      },
+      "buttons": {
+        "login": "התחבר",
+        "signup": "הירשם כאן"
+      },
+      "signup_prompt": "אין לך חשבון?"
     }
   }
 }
