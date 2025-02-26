@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Layout } from "antd";
-import { AbilityContext } from "./components/AbilityContext";
-import { defineAbilityFor } from "./config/ability";
+import { AbilityContext } from "@src/components/AbilityContext";
+import { defineAbilityFor } from "@src/config/ability";
 import Sidebar from "./components/layout/Sidebar/Sidebar";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AppHeader from "./components/layout/Header/Header";
@@ -16,8 +16,8 @@ import AuthGuard from "./components/AuthGuard/AuthGuard";
 const { Content } = Layout;
 
 export default function App() {
-  const [{ user }] = useAuthStore();
-  const ability = defineAbilityFor(user?.role);
+  const [{ systemUser }] = useAuthStore();
+  const ability = defineAbilityFor(systemUser?.role);
 
   return (
     <Router>

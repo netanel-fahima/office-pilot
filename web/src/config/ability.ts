@@ -10,7 +10,7 @@ export const AppAbility = Ability as AbilityClass<AppAbility>;
 export function defineAbilityFor(role: UserRole | undefined) {
   const { can, cannot, build } = new AbilityBuilder<AppAbility>(AppAbility);
 
-  if (role?.name === "admin") {
+  if (role && role === "admin") {
     can("manage", "all");
   } else {
     // הרשאות ברירת מחדל למשתמשים שאינם מנהלים

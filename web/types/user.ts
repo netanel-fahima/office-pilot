@@ -19,10 +19,13 @@ export interface SystemUser {
   isActive: boolean; // האם המשתמש פעיל?
 }
 
-export interface UserRole {
-  id: string;
-  name: "admin" | "secretary" | "sales" | "agent" | "assistant" | "other"; // סוג התפקיד
-  description?: string; // תיאור התפקיד
+export enum UserRole {
+  Admin = "admin",
+  Secretary = "secretary",
+  Sales = "sales",
+  Agent = "agent",
+  Assistant = "assistant",
+  Other = "other",
 }
 
 export interface UserPermissions {
