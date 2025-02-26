@@ -3,6 +3,7 @@ import { Image, Layout, Menu } from "antd";
 import { Link } from "react-router-dom";
 import * as Icons from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
+import { Can } from "@src/components/AbilityContext";
 import "./Sidebar.css";
 import { useLayoutStore } from "@src/store/layoutStore";
 import menuIcon from "@src/assets/logo.png";
@@ -23,7 +24,17 @@ const Sidebar = () => {
       const IconComponent = (Icons as any)[item.icon] || Icons.AppstoreOutlined;
 
       if (item.children) {
-        return (
+        return item.name === "admin" ? (
+          <Can I="manage" a="User" key={item.path}>
+            <Menu.SubMenu
+              key={item.path}
+              icon={<IconComponent />}
+              title={t(`menus.${item.title}`)}
+            >
+              {renderMenuItems(item.children)}
+            </Menu.SubMenu>
+          </Can>
+        ) : (
           <Menu.SubMenu
             key={item.path}
             icon={<IconComponent />}

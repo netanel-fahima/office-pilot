@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Form, Input, Button, Card, message, Select } from "antd";
+import { Form, Input, Button, Card, message } from "antd";
 import {
   UserOutlined,
   LockOutlined,
@@ -23,10 +23,7 @@ import {
 import { useTranslation } from "react-i18next";
 import { useNavigate, Link, useSearchParams } from "react-router-dom";
 import { db } from "@src/config/firebaseConfig";
-import { validateInviteCode } from "@src/utils/userUtils";
 import "./Signup.css";
-
-const { Option } = Select;
 
 interface SignupFormData {
   firstName: string;
@@ -34,7 +31,6 @@ interface SignupFormData {
   email: string;
   password: string;
   phoneNumber: string;
-  inviteCode: string;
 }
 
 const Signup = () => {
@@ -47,17 +43,18 @@ const Signup = () => {
   const inviteCode = searchParams.get("invite");
 
   useEffect(() => {
-    if (inviteCode) {
-      form.setFieldsValue({ inviteCode });
+    if (!inviteCode) {
+      navigate("/login");
     }
-  }, [inviteCode, form]);
+  }, [inviteCode, navigate]);
 
   const validateInvite = async (code: string) => {
     const invitesRef = collection(db, "userInvites");
     const q = query(
       invitesRef,
       where("managerSentCode", "==", code),
-      where("claimed", "==", false)
+      where("claimed", "==", false),
+      where("email", "==", form.getFieldValue("email"))
     );
     const snapshot = await getDocs(q);
     return !snapshot.empty ? snapshot.docs[0] : null;
@@ -66,12 +63,7 @@ const Signup = () => {
   const onFinish = async (values: SignupFormData) => {
     setLoading(true);
     try {
-      // בדיקת קוד ההזמנה
-      if (!validateInviteCode(values.inviteCode)) {
-        throw new Error(t("auth.signup.validation.invalid_invite"));
-      }
-
-      const invite = await validateInvite(values.inviteCode);
+      const invite = await validateInvite(inviteCode!);
       if (!invite) {
         throw new Error(t("auth.signup.messages.error_code_not_found"));
       }
@@ -94,8 +86,9 @@ const Signup = () => {
       const userDoc = doc(db, "users", user.uid);
       await setDoc(userDoc, {
         id: user.uid,
-        username: inviteData.username,
-        managerSentCode: values.inviteCode,
+        username:
+          inviteData.username || `${values.firstName} ${values.lastName}`,
+        managerSentCode: inviteCode,
         firstName: values.firstName,
         lastName: values.lastName,
         fullName: `${values.firstName} ${values.lastName}`,
@@ -217,28 +210,6 @@ const Signup = () => {
             <Input
               prefix={<PhoneOutlined />}
               placeholder={t("auth.signup.placeholders.phone")}
-              size="large"
-            />
-          </Form.Item>
-
-          <Form.Item
-            name="inviteCode"
-            rules={[
-              {
-                required: true,
-                message: t("auth.signup.validation.required_invite"),
-              },
-              {
-                validator: async (_, value) => {
-                  if (!validateInviteCode(value)) {
-                    throw new Error(t("auth.signup.validation.invalid_invite"));
-                  }
-                },
-              },
-            ]}
-          >
-            <Input
-              placeholder={t("auth.signup.placeholders.invite_code")}
               size="large"
             />
           </Form.Item>
