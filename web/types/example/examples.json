@@ -1,0 +1,204 @@
+//UserAccess
+[
+  {
+    "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+    "createdDate": "2025-01-20T18:58:13.272Z",
+    "createdBy": "4230b28c-1ed3-4866-8de1-0b031e40bc4d",
+    "creatorName": "שלי אביטן",
+    "version": 0,
+    "id": "194d4d58-67aa-4b49-9400-a0c760c0511f",
+    "userId": "4230b28c-1ed3-4866-8de1-0b031e40bc4d",
+    "groupId": "customers",
+    "primary": true,
+    "shared": false,
+    "name": "תצוגה ראשית",
+    "orderValue": 1.0,
+    "autoSave": false,
+    "defaultView": false,
+    "defaultViewUpdatedAt": "2025-01-20T18:58:13Z"
+  }
+]
+// InsuranceClient 
+{
+    "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+    "agencyId": "52f240ca-6c02-496c-97e0-bd8c1e9dd22e",
+    "createdDate": "2025-02-24T09:58:10Z",
+    "createdBy": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+    "creatorName": "רועי עיני",
+    "lastModifiedDate": "2025-02-26T05:47:03Z",
+    "lastModifiedBy": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+    "version": 4,
+    "id": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+    "statusId": "4d2c30db-92d6-4c4c-983e-2a9566a86db0",
+    "statusName": "לקוח לא פעיל",
+    "statusActive": false,
+    "sourceId": "c682648b-69db-4f3c-8d07-f7ce8f519fbd",
+    "sourceName": "דניאל",
+    "managerId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+    "managers": [
+        "078c47e3-7037-4cb5-9ded-9b0e01f924b6"
+    ],
+    "sensitive": false,
+    "mailingStatus": {
+        "code": 1,
+        "description": "אושר דיוור",
+        "order": 0,
+        "shortDescription": "אושר דיוור",
+        "obsolete": false
+    },
+    "mailingStatusDate": "2025-02-24T15:00:08Z",
+    "idType": {
+        "code": 1,
+        "description": "ת.ז",
+        "order": 0,
+        "shortDescription": "ת.ז",
+        "obsolete": false
+    },
+    "idNumber": "208518167",
+    "idNumberLocked": true,
+    "idCardIssueDate": "2020-06-20",
+    "firstName": "לין",
+    "lastName": "אברמוב",
+    "fullName": "לין אברמוב",
+    "fullNameReverse": "אברמוב לין",
+    "cellNumber": "+972502605981",
+    "cellNumberVerified": false,
+    "cellNumberFormatted": "050-260-5981",
+    "cellNumberUri": "tel:+972-50-260-5981",
+    "cellNumberWhatsAppUri": "https://wa.me/972502605981",
+    "email": "abramov.bon@gmail.com",
+    "emailBounce": false,
+    "emailComplaint": false,
+    "gender": {
+        "code": 3,
+        "description": "נקבה",
+        "order": 0,
+        "shortDescription": "נקבה",
+        "obsolete": false
+    },
+    "birthDate": "1996-12-11",
+    "birthDay": 11,
+    "birthMonth": 12,
+    "birthYear": 1996,
+    "age": "P28Y2M15D",
+    "minor": false,
+    "street": "דרך ארץ",
+    "streetNumber": "70",
+    "city": "חריש",
+    "postalCode": 3761136,
+    "address": "דרך ארץ 70 חריש 3761136",
+    "maritalStatus": {
+        "code": 2,
+        "description": "נשוי/אה",
+        "order": 0,
+        "shortDescription": "נשוי/אה",
+        "obsolete": false
+    },
+    "relatedCustomers": [],
+    "employments": [],
+    "swiftnessProxyInviteDate": "2025-02-24",
+    "swiftnessProxySignDate": "2025-02-24",
+    "swiftnessProxyExpiryDate": "2025-05-24",
+    "swiftnessProxyExpired": false,
+    "lastE9100DataDate": "2025-02-26",
+    "outdatedE9100Data": false,
+    "swiftnessData": true,
+    "customFields": [],
+    "reportEnabled": false,
+    "lastActivityDate": "2025-02-26T05:47:02.190Z",
+    "appMailAddress": "c4NLRUQI2BJDONBW5MO6SJFRBVU@m.surense.com",
+    "tromStats": {
+        "calculatedAt": "2025-02-26T05:47:02.501771Z",
+        "tzvira": 63172.07,
+        "tzviraHon": 0.00,
+        "tzviraKitzba": 63172.07,
+        "tzviraPitsuim": 2412.35,
+        "tzviraPensia": 63172.07,
+        "tzviraPensiaVatika": 0.00,
+        "tzviraMenaalim": 0.00,
+        "tzviraHishtalmut": 0.00,
+        "tzviraGemelLeashkaa": 0.00,
+        "tzviraGemel": 0.00,
+        "tzviraGemel190": 0.00,
+        "tzviraHisahonFinansi": 0.00,
+        "tzviraAlternativiim": 0.00,
+        "tzviraNihulTikim": 0.00,
+        "tzviraNezila": 0.00,
+        "hafkadot": 193.90,
+        "dmeiNihulHazuim": 37.03,
+        "avgNetReturnPercentStartYear": 0.01130,
+        "kitzbaHazuyaKolelHafkadot": 2695.90,
+        "kitzbaHazuyaLeloHafkadot": 1411.48,
+        "kayamHalvaot": false,
+        "kayamIkulimShiabudim": false,
+        "premia": 0.00,
+        "kayamHaim": false,
+        "kayamHaimMashkanta": false,
+        "kayamBriut": false,
+        "kayamMahalotKashot": false,
+        "premiaMahalotKashot": 0.00,
+        "kayamTeunotIshiot": false,
+        "kayamSiudi": false,
+        "kayamSiudiKupah": false,
+        "kayamAka": false,
+        "kayamNehutMiteuna": false,
+        "kitzbaNehut": 4299.51,
+        "kitzbaLealman": 3439.61,
+        "kitzbaLeyetom": 2293.07
+    },
+    "customerServiceEnabled": false,
+    "tags": []
+}
+
+//Mislaka history 
+[
+    {
+        "production": false,
+        "source": 0,
+        "misparMislaka": "DEAE4DA1-0C56-4672-9ABA-A0CD8F04E982",
+        "e9100Progress": 56,
+        "validityDate": "2025-01-31",
+        "validityMonth": "2025-01"
+    }
+]
+
+//Contact
+{
+    "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+    "agencyId": "52f240ca-6c02-496c-97e0-bd8c1e9dd22e",
+    "createdDate": "2022-08-07T19:09:34Z",
+    "lastModifiedDate": "2022-08-07T19:09:34Z",
+    "version": 0,
+    "id": "03ca182c-f4f2-49be-b313-b056fe9845fa",
+    "employerId": "aaa59ce5-642a-428e-bad6-58e81fc24b32",
+    "employerName": "אורטל שירותי כח אדם בעמ",
+    "firstName": "-",
+    "fullName": "-",
+    "phoneNumber2": "+97237616100",
+    "emails": [],
+    "customFields": [],
+    "editable": true,
+    "deletable": true
+}
+
+// Employer
+{
+    "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+    "agencyId": "52f240ca-6c02-496c-97e0-bd8c1e9dd22e",
+    "createdDate": "2025-02-26T05:47:02Z",
+    "version": 0,
+    "id": "5b266105-9d81-4f22-8b23-f135b3de0794",
+    "idType": {
+        "code": 2,
+        "description": "ח.פ",
+        "order": 0,
+        "shortDescription": "ח.פ",
+        "obsolete": false
+    },
+    "idNumber": "520041187",
+    "name": "טיב טעם הולדינגס 1 בעמ",
+    "tags": [],
+    "lastActivityDate": "2025-02-26T05:47:02.189Z",
+    "customFields": [],
+    "appMailAddress": "eLMTGCBM5QFHSFCZD6E23HXQHSQ@m.surense.com"
+}

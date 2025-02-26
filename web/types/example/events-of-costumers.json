@@ -1,0 +1,113 @@
+{
+  "results": [
+    {
+      "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+      "createdDate": "2025-02-24T15:00:13.103Z",
+      "createdBy": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "creatorName": "רועי עיני",
+      "id": "62d88611-b3d4-4a01-9753-f3b9c8f4199d",
+      "authUserId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+      "customerFullName": "לין אברמוב",
+      "parameters": {
+        "txId": "d8fb9365-ec1e-40b8-b501-1e4dd6e27774",
+        "retry": false,
+        "extProxy": false
+      },
+      "eventType": "SwiftnessE9100Submitted"
+    },
+    {
+      "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+      "createdDate": "2025-02-24T15:00:12.966Z",
+      "id": "ef075e8a-6de3-400e-a376-5d1330b3cdec",
+      "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+      "customerFullName": "לין אברמוב",
+      "parameters": {
+        "idNumber": "208518167",
+        "licenseType": 2,
+        "approvalDate": "2025-02-24T15:00:12.469257Z",
+        "contactEmail": "rotem@sargon-ins.com",
+        "remoteAddress": "176.228.73.125",
+        "submitRequest": true,
+        "initiatorUserId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+        "licenseeFullName": "סרגון סוכנות לביטוח פנסיוני (2022) בע\"מ",
+        "licenseeLicenseNumber": "516531894"
+      },
+      "eventType": "NispahAlefProxyApproved"
+    },
+    {
+      "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+      "createdDate": "2025-02-24T15:00:08.015Z",
+      "id": "77c00f3e-a1a4-47f4-a317-bf8778fa8968",
+      "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+      "customerFullName": "לין אברמוב",
+      "eventType": "CustomerMailingSubscribed"
+    },
+    {
+      "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+      "createdDate": "2025-02-24T14:59:11.517Z",
+      "createdBy": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "creatorName": "רועי עיני",
+      "id": "aada85a6-4096-413a-afd5-ae9e8d53faba",
+      "authUserId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "authUserName": "רועי עיני",
+      "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+      "customerFullName": "לין אברמוב",
+      "parameters": {
+        "policies": false,
+        "swiftness": true,
+        "harHabituah": false,
+        "swiftnessAccountId": "b229cdaf-0834-4113-8321-3eef59283a6f"
+      },
+      "eventType": "DataProxiesInviteSent"
+    },
+    {
+      "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+      "createdDate": "2025-02-24T09:58:27.833Z",
+      "createdBy": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "creatorName": "רועי עיני",
+      "id": "f67e129f-593a-4c73-9ab5-28543bab2b66",
+      "authUserId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "authUserName": "רועי עיני",
+      "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+      "customerFullName": "לין אברמוב",
+      "parameters": {
+        "policies": false,
+        "swiftness": true,
+        "harHabituah": false,
+        "swiftnessAccountId": "b229cdaf-0834-4113-8321-3eef59283a6f"
+      },
+      "eventType": "DataProxiesInviteSent"
+    },
+    {
+      "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+      "createdDate": "2025-02-24T09:58:10.029Z",
+      "createdBy": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "creatorName": "רועי עיני",
+      "id": "c5ecac04-2ffa-4d09-9236-5fd64c35ca53",
+      "authUserId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "authUserName": "רועי עיני",
+      "leadId": "0c897a6f-7522-400d-aef9-c661bb795c29",
+      "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+      "customerFullName": "לין אברמוב",
+      "parameters": {
+        "ownerId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+        "assignedUserId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6"
+      },
+      "eventType": "LeadCreated"
+    },
+    {
+      "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+      "createdDate": "2025-02-24T09:58:09.998Z",
+      "createdBy": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "creatorName": "רועי עיני",
+      "id": "c4abdd00-6de4-4ace-b92f-aa03d42d9433",
+      "authUserId": "078c47e3-7037-4cb5-9ded-9b0e01f924b6",
+      "authUserName": "רועי עיני",
+      "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+      "customerFullName": "לין אברמוב",
+      "eventType": "CustomerCreated"
+    }
+  ],
+  "hasNextPage": false
+}

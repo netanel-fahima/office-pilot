@@ -1,0 +1,44 @@
+[
+  {
+    "code": 2,
+    "description": "דרכון",
+    "order": 0,
+    "shortDescription": "דרכון",
+    "obsolete": false
+  },
+  {
+    "code": 6,
+    "description": "ח.צ",
+    "order": 0,
+    "shortDescription": "ח.צ",
+    "obsolete": false
+  },
+  {
+    "code": 1,
+    "description": "ת.ז",
+    "order": 0,
+    "shortDescription": "ת.ז",
+    "obsolete": false
+  },
+  {
+    "code": 3,
+    "description": "רישיון נהיגה",
+    "order": 0,
+    "shortDescription": "רישיון נהיגה",
+    "obsolete": false
+  },
+  {
+    "code": 4,
+    "description": "אחר",
+    "order": 0,
+    "shortDescription": "אחר",
+    "obsolete": false
+  },
+  {
+    "code": 5,
+    "description": "ח.פ",
+    "order": 0,
+    "shortDescription": "ח.פ",
+    "obsolete": false
+  }
+]

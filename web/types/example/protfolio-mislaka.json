@@ -1,0 +1,1794 @@
+{
+    "misparMislaka": "DEAE4DA1-0C56-4672-9ABA-A0CD8F04E982",
+    "products": [
+        {
+            "createdDate": "2025-02-26T05:47:02Z",
+            "version": 0,
+            "id": "de108542-4aee-4046-9cf3-ccda8a94da91",
+            "hidden": false,
+            "source": {
+                "code": 1,
+                "description": "מסלקה פנסיונית"
+            },
+            "customerId": "e3571a41-1a0a-46e6-86dd-63bd249621ad",
+            "companyId": 48,
+            "companyIdNumber": 512065202,
+            "productId": 225,
+            "shemTohnit": "מיטב פנסיה מקיפה",
+            "type": {
+                "code": 1,
+                "description": "קרן פנסיה חדשה מקיפה",
+                "shortDescription": "פנסיה מקיפה",
+                "group": "פנסיה",
+                "position": 100,
+                "obsolete": false,
+                "productCreationEnabled": false,
+                "order": 0
+            },
+            "accountPolicyNumber": "208518167",
+            "covers": [],
+            "validityDate": "2025-01-31",
+            "validityMonth": "2025-01",
+            "production": false,
+            "misparMemHei": 163,
+            "maamad": {
+                "code": 1,
+                "description": "שכיר"
+            },
+            "status": {
+                "code": 7,
+                "description": "ריסק זמני אוטומטי",
+                "shortDescription": "ריסק זמני אוטומטי"
+            },
+            "statusDate": "2025-01-01",
+            "taarihThilatRiskZmani": "2025-02-01",
+            "salary": 1048.00,
+            "reportedSalary": 1048.00,
+            "accumulation": 63172.07,
+            "reportedAccumulation": 63172.07,
+            "accumulationILS": 63172.07,
+            "totalErkeiPidion": 63172.07,
+            "honAccumulation": 0.00,
+            "honAccumulationILS": 0.00,
+            "tagmulimAccumulation": 60759.72,
+            "pitsuimAccumulation": 2412.35,
+            "accumulationFee": 0.000100,
+            "reportedAccumulationFee": 0.000100,
+            "depositFee": 0.013100,
+            "reportedDepositFee": 0.013100,
+            "subscriptionDate": "2018-06-06",
+            "initialSubscriptionDate": "2018-06-06",
+            "masluleiAshkaa": [
+                {
+                    "code": 2155,
+                    "name": "מיטב פנסיה מקיפה לבני 50 ומטה",
+                    "nihulIshi": false,
+                    "accumulation": 63172.07,
+                    "last36MonthsAvgYearlyReturn": 0.07990,
+                    "last60MonthsAvgYearlyReturn": 0.09190,
+                    "currentYearCumulatedReturn": 0.01450,
+                    "last36MonthsCumulatedReturn": 0.25940,
+                    "last60MonthsCumulatedReturn": 0.55180,
+                    "reportMonth": "2025-01"
+                }
+            ],
+            "currency": "ILS",
+            "misparMislaka": "DEAE4DA1-0C56-4672-9ABA-A0CD8F04E982",
+            "meyupeKoah": [],
+            "meyupeKoahAboutToExpire": true,
+            "gviaDetails": {
+                "shemMeshalem": "טיב טעם הולדינגס 1 בעמ",
+                "sugMezaheMeshalem": {
+                    "code": 1,
+                    "description": "חברה פרטית"
+                },
+                "mezaheMeshalem": "520041187",
+                "ofenTashlum": {
+                    "code": 1,
+                    "description": "העברה בנקאית"
+                },
+                "tadirutTashlum": {
+                    "code": 4,
+                    "description": "חודשי"
+                },
+                "hodeshTashlum": 1,
+                "yomGvia": 15,
+                "sugHatzmada": {
+                    "code": 1,
+                    "description": "צמוד לשכר"
+                }
+            },
+            "ytrotDetails": [
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 17004.93,
+                    "totalPidion": 17004.93
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "520041187",
+                    "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 11515.82,
+                    "totalPidion": 11515.82
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 19059.0,
+                    "totalPidion": 19059.0
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "520041187",
+                    "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 10453.74,
+                    "totalPidion": 10453.74
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 1417.64,
+                    "totalPidion": 1417.64
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 1308.59,
+                    "totalPidion": 1308.59
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 1,
+                        "description": "פיצויים"
+                    },
+                    "total": 1094.77,
+                    "totalPidion": 1094.77
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 1,
+                        "description": "פיצויים"
+                    },
+                    "total": 1317.58,
+                    "totalPidion": 1317.58
+                }
+            ],
+            "ytrot": [
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 17004.93,
+                    "totalPidion": 17004.93
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "520041187",
+                    "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 11515.82,
+                    "totalPidion": 11515.82
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 19059.0,
+                    "totalPidion": 19059.0
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "520041187",
+                    "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 10453.74,
+                    "totalPidion": 10453.74
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 1417.64,
+                    "totalPidion": 1417.64
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 1308.59,
+                    "totalPidion": 1308.59
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 1,
+                        "description": "פיצויים"
+                    },
+                    "total": 1094.77,
+                    "totalPidion": 1094.77
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 1,
+                        "description": "פיצויים"
+                    },
+                    "total": 1317.58,
+                    "totalPidion": 1317.58
+                }
+            ],
+            "ytrotLeTkufa": [
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "tkufatYtra": {
+                        "code": 9,
+                        "description": "פיצויים"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 1,
+                        "description": "פיצויים"
+                    },
+                    "total": 1317.58
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "520041187",
+                    "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                    "tkufatYtra": {
+                        "code": 7,
+                        "description": "מ- 01.01.2008"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 10453.74
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "tkufatYtra": {
+                        "code": 7,
+                        "description": "מ- 01.01.2008"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 19059.0
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "520041187",
+                    "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                    "tkufatYtra": {
+                        "code": 7,
+                        "description": "מ- 01.01.2008"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 11515.82
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "tkufatYtra": {
+                        "code": 7,
+                        "description": "מ- 01.01.2008"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 1308.59
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031918790",
+                    "shemMaasik": "בטרקום",
+                    "tkufatYtra": {
+                        "code": 7,
+                        "description": "מ- 01.01.2008"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "total": 1417.64
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "tkufatYtra": {
+                        "code": 7,
+                        "description": "מ- 01.01.2008"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "total": 17004.93
+                },
+                {
+                    "taarihEreh": "2025-01-31",
+                    "mezaheMaasik": "031694219",
+                    "shemMaasik": "אבי ברדה עיצוב שיער",
+                    "tkufatYtra": {
+                        "code": 9,
+                        "description": "פיצויים"
+                    },
+                    "sugYtra": {
+                        "code": 2,
+                        "description": "קצבה משלמת"
+                    },
+                    "sugHafrasha": {
+                        "code": 1,
+                        "description": "פיצויים"
+                    },
+                    "total": 1094.77
+                }
+            ],
+            "nesilut": [],
+            "meshalemetLekitzbaAccumulation": 63172.07,
+            "loMeshalemetLekitzbaAccumulation": 0.00,
+            "customerChoiceAccumulation": 0.00,
+            "allowanceAccumulation": 63172.07,
+            "totalHonAccumulation": 0.00,
+            "pitsuimHonAccumulation": 0.00,
+            "pitsuimKitzbaAccumulation": 2412.35,
+            "tagmulimHonAccumulation": 0.00,
+            "tagmulimKitzbaAccumulation": 60759.72,
+            "shiabud": false,
+            "ikul": false,
+            "halvaot": [],
+            "mitryotBituhiot": [],
+            "tviot": [],
+            "mutavim": [
+                {}
+            ],
+            "employer": {
+                "internalId": "520041187",
+                "identifier": "520041187",
+                "name": "טיב טעם הולדינגס 1 בעמ",
+                "phoneNumber": "04-6179041",
+                "cellNumber": "054-5060807",
+                "email": "natalia@tivtaam.co.il"
+            },
+            "employers": [
+                {
+                    "internalId": "520041187",
+                    "identifier": "520041187",
+                    "name": "טיב טעם הולדינגס 1 בעמ",
+                    "statusDesc": "מעסיק קודם",
+                    "taarihThilatTashlum": "2018-06-06",
+                    "saharLePolisa": 1048.0,
+                    "seif14": false,
+                    "phoneNumber": "04-6179041",
+                    "cellNumber": "054-5060807",
+                    "email": "natalia@tivtaam.co.il"
+                },
+                {
+                    "internalId": "031694219",
+                    "identifier": "031694219",
+                    "name": "אבי ברדה עיצוב שיער",
+                    "statusDesc": "מעסיק קודם",
+                    "taarihThilatTashlum": "2018-06-06",
+                    "saharLePolisa": 13938.0,
+                    "seif14": false,
+                    "cellNumber": "050-5260199",
+                    "email": "dorit@ben-zeev.biz"
+                },
+                {
+                    "internalId": "031918790",
+                    "identifier": "031918790",
+                    "name": "בטרקום",
+                    "statusDesc": "מעסיק קודם",
+                    "taarihThilatTashlum": "2018-06-06",
+                    "saharLePolisa": 4311.04,
+                    "seif14": false
+                }
+            ],
+            "hafrashot": [
+                {
+                    "sugMafrish": {
+                        "code": 3,
+                        "description": "מעסיק קודם"
+                    },
+                    "sugHafrasha": {
+                        "code": 1,
+                        "description": "פיצויים"
+                    },
+                    "ahuz": 0.060,
+                    "schumHafrasha": 0.0,
+                    "taarihMadad": "2025-01-15"
+                },
+                {
+                    "sugMafrish": {
+                        "code": 3,
+                        "description": "מעסיק קודם"
+                    },
+                    "sugHafrasha": {
+                        "code": 2,
+                        "description": "תגמולים עובד"
+                    },
+                    "ahuz": 0.060,
+                    "schumHafrasha": 0.0,
+                    "taarihMadad": "2025-01-15"
+                },
+                {
+                    "sugMafrish": {
+                        "code": 3,
+                        "description": "מעסיק קודם"
+                    },
+                    "sugHafrasha": {
+                        "code": 3,
+                        "description": "תגמולים מעביד"
+                    },
+                    "ahuz": 0.065,
+                    "schumHafrasha": 0.0,
+                    "taarihMadad": "2025-01-15"
+                }
+            ],
+            "deposits": {
+                "hafkadot": [
+                    {
+                        "mezaheMaasik": "520041187",
+                        "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                        "taarihEreh": "2024-08-15",
+                        "month": "2024-07",
+                        "sachar": 1048.0,
+                        "total": 193.9,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 62.9,
+                                "zmanPeraon": "2024-08"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 62.9,
+                                "zmanPeraon": "2024-08"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 68.1,
+                                "zmanPeraon": "2024-08"
+                            }
+                        ]
+                    },
+                    {
+                        "mezaheMaasik": "520041187",
+                        "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                        "taarihEreh": "2024-07-16",
+                        "month": "2024-06",
+                        "sachar": 5927.0,
+                        "total": 1096.4,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 355.6,
+                                "zmanPeraon": "2024-07"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 355.6,
+                                "zmanPeraon": "2024-07"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 385.2,
+                                "zmanPeraon": "2024-07"
+                            }
+                        ]
+                    },
+                    {
+                        "mezaheMaasik": "520041187",
+                        "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                        "taarihEreh": "2024-06-16",
+                        "month": "2024-05",
+                        "sachar": 5902.0,
+                        "total": 1091.9,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 354.1,
+                                "zmanPeraon": "2024-06"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 354.1,
+                                "zmanPeraon": "2024-06"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 383.7,
+                                "zmanPeraon": "2024-06"
+                            }
+                        ]
+                    },
+                    {
+                        "mezaheMaasik": "520041187",
+                        "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                        "taarihEreh": "2024-04-15",
+                        "month": "2024-03",
+                        "sachar": 5614.0,
+                        "total": 1038.6,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 336.8,
+                                "zmanPeraon": "2024-04"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 336.8,
+                                "zmanPeraon": "2024-04"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 365.0,
+                                "zmanPeraon": "2024-04"
+                            }
+                        ]
+                    },
+                    {
+                        "mezaheMaasik": "520041187",
+                        "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                        "taarihEreh": "2024-03-17",
+                        "month": "2024-02",
+                        "sachar": 5801.0,
+                        "total": 1073.3,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 348.1,
+                                "zmanPeraon": "2024-03"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 348.1,
+                                "zmanPeraon": "2024-03"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 377.1,
+                                "zmanPeraon": "2024-03"
+                            }
+                        ]
+                    },
+                    {
+                        "mezaheMaasik": "520041187",
+                        "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                        "taarihEreh": "2024-02-18",
+                        "month": "2024-01",
+                        "sachar": 5801.0,
+                        "total": 1073.3,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 348.1,
+                                "zmanPeraon": "2024-02"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 348.1,
+                                "zmanPeraon": "2024-02"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 377.1,
+                                "zmanPeraon": "2024-02"
+                            }
+                        ]
+                    },
+                    {
+                        "mezaheMaasik": "031694219",
+                        "shemMaasik": "אבי ברדה עיצוב שיער",
+                        "sivugHafkada": {
+                            "code": 1,
+                            "description": "שוטפת"
+                        },
+                        "taarihEreh": "2023-06-12",
+                        "month": "2023-06",
+                        "sachar": 13938.0,
+                        "total": 2580.0,
+                        "netTotal": 2580.0,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 837.0,
+                                "sachar": 13938.0,
+                                "hodeshSachar": "2021-03"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 837.0,
+                                "sachar": 13938.0,
+                                "hodeshSachar": "2021-03"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 906.0,
+                                "sachar": 13938.0,
+                                "hodeshSachar": "2021-03"
+                            }
+                        ]
+                    },
+                    {
+                        "mezaheMaasik": "031918790",
+                        "shemMaasik": "בטרקום",
+                        "sivugHafkada": {
+                            "code": 1,
+                            "description": "שוטפת"
+                        },
+                        "taarihEreh": "2022-03-28",
+                        "month": "2022-03",
+                        "sachar": 4311.04,
+                        "total": 797.54,
+                        "netTotal": 797.54,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 258.66,
+                                "sachar": 4311.04,
+                                "hodeshSachar": "2022-01"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 258.66,
+                                "sachar": 4311.04,
+                                "hodeshSachar": "2022-01"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 280.22,
+                                "sachar": 4311.04,
+                                "hodeshSachar": "2022-01"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "lastDeposit": {
+                "hafkadot": [
+                    {
+                        "mezaheMaasik": "520041187",
+                        "shemMaasik": "טיב טעם הולדינגס 1 בעמ",
+                        "sivugHafkada": {
+                            "code": 1,
+                            "description": "שוטפת"
+                        },
+                        "taarihEreh": "2024-08-15",
+                        "month": "2024-08",
+                        "sachar": 1048.0,
+                        "total": 193.9,
+                        "netTotal": 193.9,
+                        "details": [
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 1,
+                                    "description": "פיצויים"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 62.9,
+                                "sachar": 1048.0,
+                                "hodeshSachar": "2024-07"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 2,
+                                    "description": "תגמולים עובד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.060,
+                                "schum": 62.9,
+                                "sachar": 1048.0,
+                                "hodeshSachar": "2024-07"
+                            },
+                            {
+                                "sugHafkada": {
+                                    "code": 2,
+                                    "description": "קצבה משלמת"
+                                },
+                                "sugHafrasha": {
+                                    "code": 3,
+                                    "description": "תגמולים מעביד"
+                                },
+                                "sugMafkid": {
+                                    "code": 3,
+                                    "description": "מעסיק קודם"
+                                },
+                                "ahuzHafrashaMeduvah": 0.065,
+                                "schum": 68.1,
+                                "sachar": 1048.0,
+                                "hodeshSachar": "2024-07"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "currentYearTotalTagmulimEmployeeDeposits": 1805.60,
+            "currentYearTotalTagmulimEmployerDeposits": 3761.80,
+            "currentYearTotalPitsuimDeposits": 1805.60,
+            "disabilityAllowance": 4299.51,
+            "totalPremiaFrequency": {
+                "code": 1,
+                "description": "חודשית"
+            },
+            "totalPremia": 0,
+            "poliRobotEligible": false,
+            "netReturnPercentStartYear": 0.01130,
+            "netReturnAmountStartYear": 901,
+            "tsuaMuvtahatAgahMeyuadot": 0.0486,
+            "ytraLefiGilPrishaDetails": [
+                {
+                    "gilPrisha": 67.0,
+                    "projectedAccumulationWithFutureDeposits": 526450.39,
+                    "projectedAccumulationWithoutFutureDeposits": 275632.0,
+                    "kitzbatZiknaKolelPremiot": 2695.9,
+                    "kitzbatZiknaLeloPremiot": 1411.48,
+                    "itraTzfuyaLeKitzbaKolelPremiot": 526450.39,
+                    "itraTzfuyaLeKitzbaLeloPremiot": 275632.0,
+                    "kupot": [
+                        {
+                            "sugKupa": {
+                                "code": 1,
+                                "description": "קופה משלמת"
+                            },
+                            "kitzbatZiknaKolelPremiot": 2695.9,
+                            "kitzbatZiknaLeloPremiot": 1411.48,
+                            "achuzTsuaBaTahazit": 0.0438,
+                            "itraTzfuyaLeKitzbaKolelPremiot": 526450.39,
+                            "itraTzfuyaLeKitzbaLeloPremiot": 275632.0
+                        }
+                    ]
+                }
+            ],
+            "swGilPrishaLeHishuvTahaziot": 67.0,
+            "projectedAccumulationWithFutureDeposits": 526450.39,
+            "projectedAccumulationWithoutFutureDeposits": 275632.0,
+            "swKitzbatZiknaKolelPremiot": 2695.9,
+            "kitzbatZiknaKolelPremiot": 2695.9,
+            "kitzbatZiknaLeloPremiot": 1411.48,
+            "swItraTzfuyaLeKitzbaKolelPremiot": 526450.39,
+            "swItraTzfuyaLeKitzbaLeloPremiot": 275632.0,
+            "swPnsAmitMevutah": true,
+            "insuranceTrackCode": 121,
+            "insuranceTrackName": "ביטוח 75% לנכות ו-100% לשאירים",
+            "disabilityCost": 21.29,
+            "survivorDisabilityCost": 4.70,
+            "survivorsCost": 5.98,
+            "pensionDisabilityCoverage": 0.7500,
+            "insuredSalary": 5732.68,
+            "swPnsTaarihNehonutSaharKovea": "2025-01-01",
+            "pensionDisabilityAllowance": 4299.51,
+            "partnerAllowance": 3439.61,
+            "orphanAllowance": 2293.07,
+            "swPnsKitzbatSheerimOreNitmah": 1146.54,
+            "partnerCoverage": 0.6000,
+            "orphanCoverage": 0.4000,
+            "swPnsShiurKisuiBituhiOreNitmah": 0.2000,
+            "swPnsGilPrishaLefiMaslulBituah": 67.00,
+            "swPnsMisparHodsheiHaverutRetzufim": 82,
+            "swPnsTaarihThilatHaverut": "2018-06-06",
+            "swPnsTaarihErehLaNetunim": "2025-01-31",
+            "swPnsHatavaBituhit": false,
+            "nehutMitpatahat": false,
+            "pnsViturKisuiBituhiNehutMeal60": false,
+            "tzviratPitzuimMaavidimKodmimBeretzefKitzba": 0.00,
+            "tzviratPitzuimMaavidimKodmimBeretzefZechuyot": 0.00,
+            "tzviratPitzuim31121999LeKitzba": 0.00,
+            "erechPidionPitzuimMaasikNochechi": 0.00,
+            "erechPidionMarkivPitzuimLeMasNochechi": 0.00,
+            "erechPidionPitzuimMaavidimKodmimRetzefZehuyut": 0.00,
+            "yitratPitzuimLeloHitchashbenot": 7237.05,
+            "kayamRetzefPitzuimKitzba": false,
+            "kayamRetzefZechuyotPitzuim": false,
+            "kidudAhid": "512065202000000000001630000000"
+        }
+    ],
+    "totalNazilAccumulation": 0,
+    "tzvira": {
+        "label": "חיסכון כולל",
+        "amount": 63172.07,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג מוצר",
+                "type": "monetary",
+                "total": 63172,
+                "distribution": [
+                    {
+                        "id": "קרנות פנסיה",
+                        "label": "קרנות פנסיה",
+                        "amount": 63172.07
+                    }
+                ]
+            },
+            {
+                "label": "יצרן",
+                "type": "monetary",
+                "total": 63172,
+                "distribution": [
+                    {
+                        "id": "מיטב",
+                        "label": "מיטב",
+                        "amount": 63172.07
+                    }
+                ]
+            },
+            {
+                "label": "הון/קצבה",
+                "type": "monetary",
+                "total": 63172,
+                "distribution": [
+                    {
+                        "id": "קצבה",
+                        "label": "קצבה",
+                        "amount": 63172.07
+                    },
+                    {
+                        "id": "הון",
+                        "label": "הון",
+                        "amount": 0.00
+                    }
+                ]
+            },
+            {
+                "label": "ישראל/חו\"ל",
+                "type": "percent",
+                "total": 1,
+                "distribution": [
+                    {
+                        "id": "נכסים בחו\"ל ובמט\"ח",
+                        "label": "נכסים בחו\"ל ובמט\"ח",
+                        "amount": 0.3817
+                    },
+                    {
+                        "id": "נכסים בארץ",
+                        "label": "נכסים בארץ",
+                        "amount": 0.6183
+                    }
+                ]
+            },
+            {
+                "label": "רמת סיכון",
+                "type": "percent",
+                "total": 1,
+                "distribution": [
+                    {
+                        "id": "השקעות ללא בטוחה מספקת או מדורגות פחות מ BBB",
+                        "label": "השקעות ללא בטוחה מספקת או מדורגות פחות מ BBB",
+                        "amount": 0.1416
+                    },
+                    {
+                        "id": "אג\"ח, הלוואות ופקדונות עם בטוחה מספקת או מדורגות לפחות BBB ותעודות סל אג\"חיות",
+                        "label": "אג\"ח, הלוואות ופקדונות עם בטוחה מספקת או מדורגות לפחות BBB ותעודות סל אג\"חיות",
+                        "amount": 0.1010
+                    },
+                    {
+                        "id": "מניות, קרנות נאמנות ותעודות סל מנייתיות",
+                        "label": "מניות, קרנות נאמנות ותעודות סל מנייתיות",
+                        "amount": 0.4245
+                    },
+                    {
+                        "id": "מזומנים_ואג\"ח ממשלתיות",
+                        "label": "מזומנים_ואג\"ח ממשלתיות",
+                        "amount": 0.3329
+                    }
+                ]
+            },
+            {
+                "label": "קבוצות ראשיות",
+                "type": "percent",
+                "total": 1,
+                "distribution": [
+                    {
+                        "id": "נכסים אחרים",
+                        "label": "נכסים אחרים",
+                        "amount": 0.1318
+                    },
+                    {
+                        "id": "אג\"ח ממשלתיות סחירות",
+                        "label": "אג\"ח ממשלתיות סחירות",
+                        "amount": 0.0079
+                    },
+                    {
+                        "id": "מזומנים ושווי מזומנים",
+                        "label": "מזומנים ושווי מזומנים",
+                        "amount": 0.0474
+                    },
+                    {
+                        "id": "פיקדונות",
+                        "label": "פיקדונות",
+                        "amount": 0.0000
+                    },
+                    {
+                        "id": "אג\"ח קונצרניות לא סחירות",
+                        "label": "אג\"ח קונצרניות לא סחירות",
+                        "amount": 0.0095
+                    },
+                    {
+                        "id": "אג\"ח קונצרני סחיר ותעודות סל אג\"חיות",
+                        "label": "אג\"ח קונצרני סחיר ותעודות סל אג\"חיות",
+                        "amount": 0.0684
+                    },
+                    {
+                        "id": "אג\"ח מיועדות",
+                        "label": "אג\"ח מיועדות",
+                        "amount": 0.2776
+                    },
+                    {
+                        "id": "קרנות נאמנות",
+                        "label": "קרנות נאמנות",
+                        "amount": 0.0234
+                    },
+                    {
+                        "id": "מניות, אופציות ותעודות סל מנייתיות",
+                        "label": "מניות, אופציות ותעודות סל מנייתיות",
+                        "amount": 0.4130
+                    },
+                    {
+                        "id": "הלוואות",
+                        "label": "הלוואות",
+                        "amount": 0.0210
+                    }
+                ]
+            },
+            {
+                "label": "נכסים סחירים/לא סחירים",
+                "type": "percent",
+                "total": 1,
+                "distribution": [
+                    {
+                        "id": "נכסים לא סחירים",
+                        "label": "נכסים לא סחירים",
+                        "amount": 0.3688
+                    },
+                    {
+                        "id": "נכסים סחירים ונזילים",
+                        "label": "נכסים סחירים ונזילים",
+                        "amount": 0.6312
+                    }
+                ]
+            },
+            {
+                "label": "חשיפה",
+                "type": "percent",
+                "total": 1,
+                "distribution": [
+                    {
+                        "id": "חשיפה למניות",
+                        "label": "חשיפה למניות",
+                        "amount": 0.5286
+                    },
+                    {
+                        "id": "חשיפה למט\"ח",
+                        "label": "חשיפה למט\"ח",
+                        "amount": 0.2291
+                    },
+                    {
+                        "id": "חשיפה לחו\"ל",
+                        "label": "חשיפה לחו\"ל",
+                        "amount": 0.5004
+                    }
+                ]
+            }
+        ]
+    },
+    "tzviraHon": {
+        "label": "חיסכון להון",
+        "amount": 0.00,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            }
+        ]
+    },
+    "tzviraKitzba": {
+        "label": "חיסכון לקצבה",
+        "amount": 63172.07,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "משלמת/לא משלמת",
+                "type": "monetary",
+                "total": 63172,
+                "distribution": [
+                    {
+                        "id": "משלמת",
+                        "label": "משלמת",
+                        "amount": 63172.07
+                    },
+                    {
+                        "id": "לא משלמת",
+                        "label": "לא משלמת",
+                        "amount": 0.00
+                    }
+                ]
+            }
+        ]
+    },
+    "tagmulim": {
+        "label": "תגמולים",
+        "amount": 60759.72,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג מוצר",
+                "type": "monetary",
+                "total": 60760,
+                "distribution": [
+                    {
+                        "id": "קרנות פנסיה",
+                        "label": "קרנות פנסיה",
+                        "amount": 60759.72
+                    }
+                ]
+            },
+            {
+                "label": "יצרן",
+                "type": "monetary",
+                "total": 60760,
+                "distribution": [
+                    {
+                        "id": "מיטב",
+                        "label": "מיטב",
+                        "amount": 60759.72
+                    }
+                ]
+            },
+            {
+                "label": "הון/קצבה",
+                "type": "monetary",
+                "total": 60760,
+                "distribution": [
+                    {
+                        "id": "קצבה",
+                        "label": "קצבה",
+                        "amount": 60759.72
+                    },
+                    {
+                        "id": "הון",
+                        "label": "הון",
+                        "amount": 0.00
+                    }
+                ]
+            }
+        ]
+    },
+    "pitsuim": {
+        "label": "פיצויים",
+        "amount": 2412.35,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג מוצר",
+                "type": "monetary",
+                "total": 2412,
+                "distribution": [
+                    {
+                        "id": "קרנות פנסיה",
+                        "label": "קרנות פנסיה",
+                        "amount": 2412.35
+                    }
+                ]
+            },
+            {
+                "label": "יצרן",
+                "type": "monetary",
+                "total": 2412,
+                "distribution": [
+                    {
+                        "id": "מיטב",
+                        "label": "מיטב",
+                        "amount": 2412.35
+                    }
+                ]
+            },
+            {
+                "label": "הון/קצבה",
+                "type": "monetary",
+                "total": 2412,
+                "distribution": [
+                    {
+                        "id": "קצבה",
+                        "label": "קצבה",
+                        "amount": 2412.35
+                    },
+                    {
+                        "id": "הון",
+                        "label": "הון",
+                        "amount": 0.00
+                    }
+                ]
+            }
+        ]
+    },
+    "hishtalmut": {
+        "label": "השתלמות",
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "יצרן",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            }
+        ]
+    },
+    "hisahonNosaf": {
+        "label": "חיסכון נוסף",
+        "amount": 0,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג מוצר",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            }
+        ]
+    },
+    "kitzbaHazuyaLeloPremiot": {
+        "label": "קצבה חזויה ללא הפקדות עתידיות",
+        "amount": 1411.48,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג מוצר",
+                "type": "monetary",
+                "total": 1411,
+                "distribution": [
+                    {
+                        "id": "קרן פנסיה חדשה מקיפה",
+                        "label": "קרן פנסיה חדשה מקיפה",
+                        "amount": 1411.48
+                    }
+                ]
+            },
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 1411,
+                "distribution": [
+                    {
+                        "id": "de108542-4aee-4046-9cf3-ccda8a94da91",
+                        "label": "מיטב פנסיה מקיפה (208518167)",
+                        "amount": 1411.48
+                    }
+                ]
+            }
+        ]
+    },
+    "kitzbaHazuyaKolelPremiot": {
+        "label": "קצבה חזויה כולל הפקדות עתידיות",
+        "amount": 2695.9,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג מוצר",
+                "type": "monetary",
+                "total": 2696,
+                "distribution": [
+                    {
+                        "id": "קרן פנסיה חדשה מקיפה",
+                        "label": "קרן פנסיה חדשה מקיפה",
+                        "amount": 2695.9
+                    }
+                ]
+            },
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 2696,
+                "distribution": [
+                    {
+                        "id": "de108542-4aee-4046-9cf3-ccda8a94da91",
+                        "label": "מיטב פנסיה מקיפה (208518167)",
+                        "amount": 2695.9
+                    }
+                ]
+            }
+        ]
+    },
+    "tsuaMithilatShana": {
+        "label": "תשואה מתחילת שנה",
+        "amount": 0.0113,
+        "type": "percent",
+        "distributions": [
+            {
+                "label": "מוצר",
+                "type": "percent",
+                "total": 901,
+                "distribution": [
+                    {
+                        "id": "de108542-4aee-4046-9cf3-ccda8a94da91",
+                        "label": "מיטב פנסיה מקיפה (208518167)",
+                        "amount": 901
+                    }
+                ]
+            }
+        ]
+    },
+    "hafkadot": {
+        "label": "סה\"כ הפקדות",
+        "amount": 0.0113,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            }
+        ]
+    },
+    "shumHadPaamiLeSheerim": {
+        "label": "סכום חד פעמי לשארים",
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            }
+        ]
+    },
+    "kitzbatNehut": {
+        "label": "קצבת נכות",
+        "amount": 4299.51,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 4300,
+                "distribution": [
+                    {
+                        "id": "de108542-4aee-4046-9cf3-ccda8a94da91",
+                        "label": "מיטב פנסיה מקיפה (208518167)",
+                        "amount": 4299.51
+                    }
+                ]
+            }
+        ]
+    },
+    "kitzbaLeAlman": {
+        "label": "קצבה לאלמן/ה",
+        "amount": 3439.61,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 3440,
+                "distribution": [
+                    {
+                        "id": "de108542-4aee-4046-9cf3-ccda8a94da91",
+                        "label": "מיטב פנסיה מקיפה (208518167)",
+                        "amount": 3439.61
+                    }
+                ]
+            }
+        ]
+    },
+    "kitzbaLeYetom": {
+        "label": "קצבה ליתום",
+        "amount": 2293.07,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 2293,
+                "distribution": [
+                    {
+                        "id": "de108542-4aee-4046-9cf3-ccda8a94da91",
+                        "label": "מיטב פנסיה מקיפה (208518167)",
+                        "amount": 2293.07
+                    }
+                ]
+            }
+        ]
+    },
+    "shumBituahHaimMashkanta": {
+        "label": "סכום ביטוח חיים משכנתא",
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "מוצר",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            }
+        ]
+    },
+    "sahPremiaHodshit": {
+        "label": "סה\"כ פרמיה חודשית",
+        "amount": 0,
+        "type": "monetary",
+        "distributions": [
+            {
+                "label": "סוג מוצר",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            },
+            {
+                "label": "יצרן",
+                "type": "monetary",
+                "total": 0,
+                "distribution": []
+            }
+        ]
+    }
+}
