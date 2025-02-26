@@ -59,7 +59,8 @@
         "secretary": "מזכיר/ה",
         "sales": "איש מכירות",
         "agent": "סוכן",
-        "assistant": "עוזר/ת"
+        "assistant": "עוזר/ת",
+        "admin": "מנהל"
       },
       "status": {
         "active": "פעיל",

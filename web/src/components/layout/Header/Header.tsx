@@ -13,7 +13,7 @@ const { Header } = Layout;
 const AppHeader = () => {
   const { t } = useTranslation();
   const [{ HeaderItems }, actions] = useLayoutStore();
-  const [{ user }] = useAuthStore();
+  const [{ systemUser }] = useAuthStore();
   const navigate = useNavigate();
   const auth = getAuth();
 
@@ -38,9 +38,11 @@ const AppHeader = () => {
       .toUpperCase();
   };
 
-  const userFullName = user?.displayName || t("userName", "משתמש");
+  const userFullName = systemUser?.fullName || t("userName", "משתמש");
   const userInitials = getInitials(userFullName);
-  const userRole = t(`admin.users.roles.${user?.role?.name}`) || "";
+  const userRole = systemUser?.role
+    ? t(`admin.users.roles.${systemUser.role}`)
+    : "";
 
   return (
     <Header className="app-header">
@@ -97,10 +99,10 @@ const AppHeader = () => {
         >
           <div className="user-profile">
             <div className="user-name">
+              <span className="user-role">{userRole}</span>
               <span className="user-full-name" title={userFullName}>
                 {userFullName}
               </span>
-              <span className="user-role">{userRole}</span>
             </div>
             <Avatar size="large" className="user-avatar">
               {userInitials.slice(0, 2)}

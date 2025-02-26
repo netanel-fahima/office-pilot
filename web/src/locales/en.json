@@ -59,7 +59,8 @@
         "secretary": "Secretary",
         "sales": "Sales",
         "agent": "Agent",
-        "assistant": "Assistant"
+        "assistant": "Assistant",
+        "admin": "Admin"
       },
       "status": {
         "active": "Active",

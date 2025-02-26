@@ -1,8 +1,12 @@
-import { User } from 'firebase/auth';
-import { useSyncExternalStore } from 'react';
+import { User } from "firebase/auth";
+import { useSyncExternalStore } from "react";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "@src/config/firebaseConfig";
+import type { SystemUser } from "@root/types/user";
 
 interface StoreState {
   user: User | null;
+  systemUser: SystemUser | null;
   initialized: boolean;
 }
 
@@ -21,6 +25,7 @@ interface Store {
 const store: Store = {
   state: {
     user: null,
+    systemUser: null,
     initialized: false,
   },
   listeners: new Set(),
@@ -34,8 +39,27 @@ const store: Store = {
     return () => store.listeners.delete(listener);
   },
   actions: {
-    setUser: (user) => {
-      store.setState({ ...store.state, user });
+    setUser: async (user) => {
+      if (user) {
+        try {
+          const userDoc = await getDoc(doc(db, "users", user.uid));
+          if (userDoc.exists()) {
+            store.setState({
+              ...store.state,
+              user,
+              systemUser: userDoc.data() as SystemUser,
+            });
+          } else {
+            console.error("User document not found in Firestore");
+            store.setState({ ...store.state, user, systemUser: null });
+          }
+        } catch (error) {
+          console.error("Error fetching user data:", error);
+          store.setState({ ...store.state, user, systemUser: null });
+        }
+      } else {
+        store.setState({ ...store.state, user: null, systemUser: null });
+      }
     },
     setInitialized: (initialized) => {
       store.setState({ ...store.state, initialized });
