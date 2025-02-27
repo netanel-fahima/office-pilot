@@ -12,6 +12,8 @@ import VerifyPhone from "./pages/VerifyPhone/VerifyPhone";
 import { useAuthStore } from "./store/authStore";
 import AdminUserManagement from "./pages/AdminUserManagement/AdminUserManagement";
 import AuthGuard from "./components/AuthGuard/AuthGuard";
+import ColumnManager from "./components/table/ColumnManager";
+import ContactsPage from "./pages/Contacts/ContactsPage";
 
 const { Content } = Layout;
 
@@ -38,10 +40,14 @@ export default function App() {
                       <Routes>
                         <Route path="/" element={<Dashboard />} />
                         <Route path="events" element={<Dashboard />} />
-                        <Route
-                          path="admin/users"
-                          element={<AdminUserManagement />}
-                        />
+                        <Route path="contacts" element={<ContactsPage />} />
+                        <Route path="admin">
+                          <Route
+                            path="users"
+                            element={<AdminUserManagement />}
+                          />
+                          <Route path="columns" element={<ColumnManager />} />
+                        </Route>
                         <Route path="*" element={<h1>🔍 דף לא נמצא</h1>} />
                         <Route path="client/*" element={<ClientLayout />}>
                           <Route path="events" element={<Dashboard />} />

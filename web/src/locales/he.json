@@ -22,8 +22,10 @@
     "activities": "פעילויות",
     "processes": "תהליכים",
     "products": "מוצרים",
+    "contacts": "אנשי קשר",
     "admin": "ניהול",
-    "users_management": "ניהול משתמשים"
+    "users_management": "ניהול משתמשים",
+    "columns_management": "ניהול עמודות"
   },
   "client-menu": {
     "products": "מוצרים",

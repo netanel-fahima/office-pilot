@@ -59,11 +59,18 @@ const menus = [
     order: 8,
   },
   {
+    name: "contacts",
+    title: "contacts",
+    icon: "ContactsOutlined",
+    path: "/contacts",
+    order: 9,
+  },
+  {
     name: "admin",
     title: "admin",
     icon: "ToolOutlined",
     path: "/admin",
-    order: 9,
+    order: 10,
     children: [
       {
         name: "users",
@@ -71,6 +78,13 @@ const menus = [
         icon: "UserSwitchOutlined",
         path: "/admin/users",
         order: 1,
+      },
+      {
+        name: "columns",
+        title: "columns_management",
+        icon: "TableOutlined",
+        path: "/admin/columns",
+        order: 2,
       },
     ],
   },

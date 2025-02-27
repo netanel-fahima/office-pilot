@@ -22,8 +22,10 @@
     "activities": "Activities",
     "processes": "Processes",
     "products": "Products",
+    "contacts": "Contacts",
     "admin": "Admin",
-    "users_management": "Users Management"
+    "users_management": "Users Management",
+    "columns_management": "Columns Management"
   },
   "client-menu": {
     "products": "Products",
