@@ -110,27 +110,26 @@ export default function ColumnManager() {
     try {
       const values = await form.validateFields();
 
-      // Clean and validate dropdown values if they exist
-      let cleanDropdownValues = [];
-      if (values.dropdownValues) {
-        cleanDropdownValues = values.dropdownValues
-          .filter(Boolean)
-          .map((item) => ({
-            label: String(item.label || "").trim(),
-            value: String(item.value || "").trim(),
-          }))
-          .filter((item) => item.label && item.value);
+      // Validate required fields
+      if (
+        !values.tableName ||
+        !values.label ||
+        !values.title ||
+        !values.gridField
+      ) {
+        throw new Error("נא למלא את כל השדות החובה");
       }
 
-      // Validate and clean dropdown values
-      const dropdownValues =
-        values.dropdownValues
-          ?.filter(Boolean)
-          .map((item) => ({
-            label: String(item.label).trim(),
-            value: String(item.value).trim(),
-          }))
-          .filter((item) => item.label && item.value) || [];
+      // Clean and validate dropdown values if they exist
+      const cleanDropdownValues =
+        values.dropdownValues?.filter(
+          (item) =>
+            item &&
+            typeof item.label === "string" &&
+            typeof item.value === "string" &&
+            item.label.trim() &&
+            item.value.trim()
+        ) || [];
 
       // Create a clean object with proper types to prevent circular references
       const columnData = {
@@ -139,26 +138,26 @@ export default function ColumnManager() {
         fixed: values.fixed || null,
         label: String(values.label),
         exportLabel: String(values.exportLabel || values.label),
-        readOnly: Boolean(values.readOnly),
+        readOnly: values.readOnly || false,
         componentType: {
           name: String(values.componentType || "text"),
-          order: Number(values.order) || 1,
+          order: parseInt(values.order) || 1,
         } as const,
         title: String(values.title),
         gridField: String(values.gridField),
         width: values.width ? Number(values.width) : null,
         minWidth: values.minWidth ? Number(values.minWidth) : null,
-        ellipsis: Boolean(values.ellipsis),
+        ellipsis: values.ellipsis || false,
         defaultSortOrder: values.defaultSortOrder || null,
         sortDirections: ["ascend", "descend"],
-        gridVisible: Boolean(values.gridVisible),
-        gridInitialHide: Boolean(values.gridInitialHide),
-        gridSortable: Boolean(values.gridSortable),
-        gridFilterable: Boolean(values.gridFilterable),
-        gridExportable: Boolean(values.gridExportable),
-        gridEditable: Boolean(values.gridEditable),
-        gridAutosize: Boolean(values.gridAutosize),
-        hidden: Boolean(values.hidden),
+        gridVisible: values.gridVisible || false,
+        gridInitialHide: values.gridInitialHide || false,
+        gridSortable: values.gridSortable || false,
+        gridFilterable: values.gridFilterable || false,
+        gridExportable: values.gridExportable || false,
+        gridEditable: values.gridEditable || false,
+        gridAutosize: values.gridAutosize || false,
+        hidden: values.hidden || false,
         dropdownOptions:
           values.componentType === "dropdown"
             ? {
@@ -180,7 +179,7 @@ export default function ColumnManager() {
                     ? String(values.valueField || "")
                     : null,
               }
-            : undefined,
+            : null,
       };
 
       // Validate required fields for dynamic dropdowns
@@ -227,8 +226,6 @@ export default function ColumnManager() {
       if (editingColumnId) {
         const docRef = doc(db, "columns", editingColumnId);
         await updateDoc(docRef, columnData);
-
-        // Update columns array with new data
         setColumns((prevColumns) =>
           prevColumns.map((col) =>
             col.id === editingColumnId
@@ -238,7 +235,6 @@ export default function ColumnManager() {
         );
       } else {
         const docRef = await addDoc(collection(db, "columns"), columnData);
-        // Add new column to array
         setColumns((prevColumns) => [
           ...prevColumns,
           { ...columnData, id: docRef.id },
@@ -254,12 +250,6 @@ export default function ColumnManager() {
       } else {
         message.error("שגיאה בשמירת הנתונים");
       }
-      if (error instanceof Error) {
-        message.error(error.message || "שגיאה בשמירת הנתונים");
-      } else {
-        message.error("שגיאה בשמירת הנתונים");
-      }
-      console.error("Save failed:", error);
     }
   };
 

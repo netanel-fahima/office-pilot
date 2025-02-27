@@ -127,6 +127,9 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({
   const [data, setData] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [editingKey, setEditingKey] = useState("");
+  const [filteredInfo, setFilteredInfo] = useState<Record<string, string[]>>(
+    {}
+  );
   const [searchText, setSearchText] = useState("");
   const [isColumnSelectorOpen, setIsColumnSelectorOpen] = useState(false);
   const [visibleColumns, setVisibleColumns] = useState<string[]>([]);
@@ -326,6 +329,23 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({
     }
   };
 
+  const getColumnFilters = (field: string) => {
+    const uniqueValues = new Set<string>();
+    data.forEach((record) => {
+      if (record[field] !== undefined && record[field] !== null) {
+        uniqueValues.add(String(record[field]));
+      }
+    });
+    return Array.from(uniqueValues).map((value) => ({
+      text: value,
+      value: value,
+    }));
+  };
+
+  const handleTableChange = (pagination: any, filters: any) => {
+    setFilteredInfo(filters);
+  };
+
   const tableColumns = [
     ...columns
       .filter((col) => visibleColumns.includes(col.gridField))
@@ -338,6 +358,16 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({
         editable: col.gridEditable,
         align: col.align,
         fixed: col.fixed,
+        ...(col.gridFilterable && {
+          filterMode: "menu",
+          filters: getColumnFilters(col.gridField),
+          filteredValue: filteredInfo[col.gridField] || null,
+          onFilter: (value: string | number | boolean, record: any) =>
+            record[col.gridField]
+              ?.toString()
+              .toLowerCase()
+              .includes(value.toString().toLowerCase()),
+        }),
         sorter: col.gridSortable
           ? (a: any, b: any) => {
               const aVal = a[col.gridField];
@@ -349,14 +379,6 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({
             }
           : undefined,
         defaultSortOrder: col.defaultSortOrder,
-        filteredValue: col.gridFilterable && searchText ? [searchText] : null,
-        onFilter: col.gridFilterable
-          ? (value: string | number | boolean, record: any) =>
-              record[col.gridField]
-                ?.toString()
-                .toLowerCase()
-                .includes(value.toString().toLowerCase())
-          : undefined,
       })),
     {
       title: "פעולות",
@@ -473,6 +495,7 @@ export const DynamicTable: React.FC<DynamicTableProps> = ({
               }
               loading={loading}
               scroll={{ x: "max-content" }}
+              onChange={handleTableChange}
               pagination={{
                 onChange: cancel,
                 pageSize: 10,
