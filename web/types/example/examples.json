@@ -202,3 +202,46 @@
     "customFields": [],
     "appMailAddress": "eLMTGCBM5QFHSFCZD6E23HXQHSQ@m.surense.com"
 }
+
+
+//LicenseType
+[
+    {
+        "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+        "agencyId": "52f240ca-6c02-496c-97e0-bd8c1e9dd22e",
+        "createdDate": "2024-02-08T10:13:42Z",
+        "createdBy": "adb0ab7a-80b3-4348-aca2-4338f92ce516",
+        "creatorName": "רותם סדן",
+        "lastModifiedDate": "2024-02-22T16:10:15Z",
+        "lastModifiedBy": "adb0ab7a-80b3-4348-aca2-4338f92ce516",
+        "version": 1,
+        "id": "858e10de-685a-4f28-ad7e-32c60663638c",
+        "accessible": true,
+        "active": true,
+        "name": "סרגון סוכנות לביטוח פנסיוני (2022) בע\"מ",
+        "type": {
+            "code": 2,
+            "description": "חברה פרטית"
+        },
+        "licenseNumber": "516531894"
+    },
+    {
+        "tenantId": "67417a9f-c00a-4614-8dd3-73f6a054d140",
+        "agencyId": "52f240ca-6c02-496c-97e0-bd8c1e9dd22e",
+        "createdDate": "2024-02-22T16:08:46Z",
+        "createdBy": "adb0ab7a-80b3-4348-aca2-4338f92ce516",
+        "creatorName": "רותם סדן",
+        "lastModifiedDate": "2024-02-22T16:21:02Z",
+        "lastModifiedBy": "adb0ab7a-80b3-4348-aca2-4338f92ce516",
+        "version": 1,
+        "id": "4e4a1884-6646-451d-aa74-57520e07931e",
+        "accessible": true,
+        "active": true,
+        "name": "רותם סדן",
+        "type": {
+            "code": 1,
+            "description": "עוסק מורשה"
+        },
+        "licenseNumber": "L-00135454"
+    }
+]
