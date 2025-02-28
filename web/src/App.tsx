@@ -14,6 +14,7 @@ import AdminUserManagement from "./pages/AdminUserManagement/AdminUserManagement
 import AuthGuard from "./components/AuthGuard/AuthGuard";
 import ColumnManager from "./components/table/ColumnManager";
 import ContactsPage from "./pages/Contacts/ContactsPage";
+import "./App.css";
 
 const { Content } = Layout;
 

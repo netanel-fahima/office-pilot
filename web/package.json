@@ -9,12 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "antd": "^5.24.0",
     "@casl/ability": "^6.7.0",
     "@casl/react": "^3.1.0",
-    "lucide-react": "^0.344.0",
+    "@office-pilot/dynamic-table": "git+ssh://git@github.com:netanel-fahima/office-pilot-dynamic-table.git",
+    "antd": "^5.24.0",
     "firebase": "^11.3.1",
     "i18next": "^24.2.2",
+    "lucide-react": "^0.344.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^15.4.0",
