@@ -974,18 +974,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@office-pilot/dynamic-table@git+ssh://git@github.com:netanel-fahima/office-pilot-dynamic-table.git":
-  version "1.0.0"
-  resolved "git+ssh://git@github.com:netanel-fahima/office-pilot-dynamic-table.git#5c002b8446ee9237b5040211c7edd013f5434e45"
-  dependencies:
-    "@hello-pangea/dnd" "^16.5.0"
-    "@rjsf/antd" "^5.17.1"
-    "@rjsf/core" "^5.17.1"
-    "@rjsf/utils" "^5.17.1"
-    "@rjsf/validator-ajv8" "^5.17.1"
-    file-saver "^2.0.5"
-    xlsx "^0.18.5"
-
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
@@ -1122,9 +1110,9 @@
     rc-util "^5.44.0"
 
 "@rjsf/antd@^5.17.1":
-  version "5.24.3"
-  resolved "https://registry.yarnpkg.com/@rjsf/antd/-/antd-5.24.3.tgz#5a757ac0366eebea5ba6b55c8586633deb58fbcd"
-  integrity sha512-L9fQYKlHTLrnoUFv8jmspydSYcqCm4Oo7689Xicz3jueXipVs3v2A4vzCPIWekIrJguAEjSV6Nu2aXjTbizuYg==
+  version "5.24.7"
+  resolved "https://registry.yarnpkg.com/@rjsf/antd/-/antd-5.24.7.tgz#67cf54b4b688d281563b9f8fcaef54769d266157"
+  integrity sha512-BXPu5NAIsYHHzKl2OfjPZeibZN8b6QB57wkp11yOQ2YhAWWCKgechPWAQd8oHgQLFe6Sle+wWcjMmRcYgwK7dA==
   dependencies:
     classnames "^2.5.1"
     lodash "^4.17.21"
@@ -1132,9 +1120,9 @@
     rc-picker "2.7.6"
 
 "@rjsf/core@^5.17.1":
-  version "5.24.3"
-  resolved "https://registry.yarnpkg.com/@rjsf/core/-/core-5.24.3.tgz#af35c82c5f4b42a0afc370527375af6dd0d605bd"
-  integrity sha512-sEwt9CW8fUIzTx1UNXVTgXCIe1KfF5tRf0JN+QOv6eb6HKFbWqTxb7sqdPWvAl0FlmHOINQHwX69m5m9UmMI2Q==
+  version "5.24.7"
+  resolved "https://registry.yarnpkg.com/@rjsf/core/-/core-5.24.7.tgz#d2c12247f4b3b744a58aac2f14d40ef6d323ef48"
+  integrity sha512-8lsH4HRfXaDUCZ5SFt7VeWhzJvVb6kglDsVrgGKUJYiLVWukHAQAT5dL8p7QMsgy1HNNxPA4wbstqwLc0T4kzA==
   dependencies:
     lodash "^4.17.21"
     lodash-es "^4.17.21"
@@ -1143,9 +1131,9 @@
     prop-types "^15.8.1"
 
 "@rjsf/utils@^5.17.1":
-  version "5.24.3"
-  resolved "https://registry.yarnpkg.com/@rjsf/utils/-/utils-5.24.3.tgz#56dd6433092f2996b905b4f5041ef49a21661a0c"
-  integrity sha512-IFzMyr6RDRgSi9jdfFBomwc8LMul6zLBsRSAgzD9wAB9laDcYHwPNEL2kZhOkAGrc+4iNQSPsawGFOA6CXH87Q==
+  version "5.24.7"
+  resolved "https://registry.yarnpkg.com/@rjsf/utils/-/utils-5.24.7.tgz#409ab2a3bfd0026a74cdfe8cfa6b86d5566058a6"
+  integrity sha512-5J1IZN5iX7/2BhldzEx4diJNLEEebEiVJ0ZTTiWUu3qbU6EA/zh68buWzcxwwNJA0L2TXQDRh2DufNCVK8HBpQ==
   dependencies:
     json-schema-merge-allof "^0.8.1"
     jsonpointer "^5.0.1"
@@ -1154,9 +1142,9 @@
     react-is "^18.2.0"
 
 "@rjsf/validator-ajv8@^5.17.1":
-  version "5.24.3"
-  resolved "https://registry.yarnpkg.com/@rjsf/validator-ajv8/-/validator-ajv8-5.24.3.tgz#10e45222d60be8bab16b960a4b6c61366a94b8f0"
-  integrity sha512-PfLjVVGJI3mg/cSoCxR0bDBnCb+OsyDoQKkffzQjiGoOkOor8xumGKAVnILWVy2dVm3pTuHseep73zVJjxe2WQ==
+  version "5.24.7"
+  resolved "https://registry.yarnpkg.com/@rjsf/validator-ajv8/-/validator-ajv8-5.24.7.tgz#69b4238e4e4f3385285edfcf3ac839a76fd7c8cf"
+  integrity sha512-o95MTU3FITmPdLJ/SN4hI2KnBknhBYqCUsLpKcd9IF5QLqNuGGLQ32l+br/R1V2lhjTMLJ9tB1Ava6/o+xQGnA==
   dependencies:
     ajv "^8.12.0"
     ajv-formats "^2.1.1"

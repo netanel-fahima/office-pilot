@@ -1,5 +1,5 @@
-import { DynamicTable } from "@office-pilot/dynamic-table";
-import { MessageSquare, Save } from "lucide-react";
+import DynamicTable from "@src/plugins/dynamic-table/components/DynamicTable";
+import { Save } from "lucide-react";
 
 const ContactsPage = () => {
   return (
